@@ -9,11 +9,13 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "How to Build a Rocketship - Build the right product. Acquire customers. Earn financial freedom." %></title>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag  "application" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
