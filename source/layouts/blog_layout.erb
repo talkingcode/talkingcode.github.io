@@ -9,13 +9,18 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "How to Build a Rocketship - Build the right product. Acquire customers. Earn financial freedom." %></title>
 
+    <script type="text/javascript" src="//use.typekit.net/hbs4jxm.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag  "application" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <div class="container">
-      <%= yield %>
-    </div>
+    <section id="blog_banner">
+      <div id="blog" class="container">
+        <%= yield %>
+      </div>
+    </section>
   </body>
 </html>
