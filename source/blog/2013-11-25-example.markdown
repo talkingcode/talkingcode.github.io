@@ -1,0 +1,14 @@
+---
+title: This is a blog post
+category: sample
+---
+# Headline
+
+This is a paragraph
+
+- and this
+- is a list
+
+```ruby
+puts "this is ruby"
+```
