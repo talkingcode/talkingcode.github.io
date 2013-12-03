@@ -1,4 +1,4 @@
-## First time pulling down
+## First time pulling down code
 
 ```bash
 $ git clone git@github.com:SmallHQ/rocketship.github.io.git
