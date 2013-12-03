@@ -13,7 +13,7 @@ $ git pull
 $ bundle
 ```
 
-## Running a development server
+## Running a development server locally
 
 ```bash
 $ mm server
