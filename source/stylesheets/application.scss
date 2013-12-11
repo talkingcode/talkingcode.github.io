@@ -1,7 +1,7 @@
 @import 'skeleton';
 
 body {
-  background-color: #F7f7f7;
+  background-color: #2a87b6;
   font-family: "brandon-grotesque";
 }
 
@@ -9,10 +9,10 @@ h1, h2 {
   color: #333;
 }
 
-#header_bar_banner {
+/*#header_bar_banner {
   background-color: #59ABCE;
   height: 12px;
-}
+}*/
 
 #headline_banner {
   padding-top: 70px;
@@ -20,7 +20,9 @@ h1, h2 {
 
   #headline {
     text-align: center;
-
+    h1, h2 {
+      color: #fff;
+    }
     h1 {
       font-size: 40px;
       line-height: 36px;
@@ -39,8 +41,9 @@ h1, h2 {
 }
 
 #summary_banner {
-  padding-bottom: 30px;
-
+  background-image: url('../images/cloud-header-repeater.png');
+  background-repeat: repeat-x;
+  background-position: center bottom;
   #summary {
     #book_copy {
       padding-top: 26px;
@@ -49,6 +52,7 @@ h1, h2 {
         font-size: 24px;
         line-height: 30px;
         font-weight: 300;
+        color: #fff;
       }
 
       input {
@@ -74,31 +78,27 @@ h1, h2 {
       }
     }
 
-    #book_image {}
+    #book_image {
+      position: relative;
+      top: 12px;
+    }
   }
 }
 
 #bullet_points_banner {
-  background-color: #ddd;
+  background-color: #f4f1e1;
   padding: 30px 0px;
 
   #bullet_points {
     h2 {
-     font-size: 18px;
+     font-size: 36px;
      line-height: 40px;
-     font-weight: 900;
+     font-weight: 200;
+     text-align: center;
     }
 
-    ul {
-      font-size: 20px;
-      line-height: 40px;
-      font-weight: 500;
-
-      li {
-        list-style-type: square;
-        list-style-position: inside;
-        margin-left:15px;
-      }
+    .one-third {
+      margin-top: 1em;
     }
   }
 }
