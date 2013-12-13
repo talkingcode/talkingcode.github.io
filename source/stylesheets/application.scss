@@ -1,5 +1,30 @@
 @import 'skeleton';
 
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot');
+  src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf') format('truetype'),
+    url('fonts/icomoon.woff') format('woff'),
+    url('fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.glyph {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   background-color: #2a87b6;
   font-family: "brandon-grotesque";
@@ -66,7 +91,7 @@ h1, h2 {
 
       input[type="email"] {
         padding: 10px 10px;
-        width: 350px;
+        width: 95%;
         margin: 20px 0px 10px;
         box-shadow: inset 0px 1px 3px rgba(0,0,0,.13);
       }
@@ -75,6 +100,7 @@ h1, h2 {
         background-color: #59ABCE;
         color: #f7f7f7;
         padding: 10px 20px;
+         width: 100%;
       }
     }
 
@@ -85,33 +111,70 @@ h1, h2 {
   }
 }
 
+.divider {
+  border: 1px solid darken(#f4f1e1, 5%);
+  width: 60%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
 #bullet_points_banner {
   background-color: #f4f1e1;
-  padding: 30px 0px;
+  padding: 30px 0px 20px;
 
   #bullet_points {
+    .glyph {
+      //color: darken(#f4f1e1, 30%);
+      color: #2a87b6;
+      display: block;
+      font-size: 1.6em;
+      text-align: center;
+      margin-bottom: .5em;
+    }
     h2 {
-     font-size: 36px;
+     font-size: 30px;
      line-height: 40px;
      font-weight: 200;
      text-align: center;
+     width: 90%;
+      margin: 1em auto 2em;
     }
-
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 15px;
+      width: 90%;
+      margin: auto;
+      text-align: center
+    }
+    p {
+      padding-top: 1em;
+      font-weight: 400;
+      line-height: 1.4em;
+      font-size: 17px;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      opacity: .7;
+    }
     .one-third {
-      margin-top: 1em;
+      margin: 3em 0 2em;
     }
   }
 }
 
 #authors_banner {
+  background: #f4f1e1;
   padding: 40px 0 50px;
 
   #authors {
     h2 {
-      font-size: 26px;
-      line-height: 32px;
-      margin-bottom: 20px;
-      font-weight: 700;
+      font-size: 24px;
+     line-height: 40px;
+     font-weight: 200;
+     text-align: center;
+     width: 90%;
+      margin: 2em auto 2em;
     }
 
     #headshots {
@@ -121,13 +184,40 @@ h1, h2 {
         width: 300px;
         text-align: center;
         margin-right: 20px;
-
+        .headshot {
+          overflow: hidden;
+          width: 100%;
+        }
+        a.author {
+          display: block;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto 1em;
+           border-radius: 500px;
+           background-size: cover;
+           float: none;
+          &.matt {
+            background-image: url(https://pbs.twimg.com/profile_images/2924900755/d6037df455368ae1b69a7b6e280c24cb.jpeg);
+          }
+          &.joelle {
+            background-image: url(https://pbs.twimg.com/profile_images/3375355379/6404c39faceff6e094f39041b89623b6.png);
+          }
+          &.michael {
+            background-image: url(http://spanglishbaby.com/wp-content/directory-upload/2012/11/sacca-300x200.jpg);
+            background-position: -70px 0;
+          }
+          &:after {
+            content: '';
+            display: block;
+            clear: both;
+           }
+        }
         &:last-child {
           margin-right: 0px;
         }
 
         img {
-          border-radius: 4px;
+          border-radius: 400px;
           margin-bottom: 5px;
           opacity: .8;
 
@@ -169,10 +259,10 @@ h1, h2 {
   padding: 16px 0px;
   text-align: center;
   font-size: 14px;
-  background-color: #eee;
-
+  background-color: #111;
+  color: #e6e6e6;
   #footer a {
-    color: #333;
+    color: #fff;
   }
 
   span {
