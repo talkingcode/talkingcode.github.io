@@ -26,8 +26,11 @@
 }
 
 body {
-  background-color: #2a87b6;
+  background-color: #f4f1e1;
   font-family: "brandon-grotesque";
+  background-image: url(../images/lowpoly-bg.jpg);
+  background-repeat: repeat-x;
+  background-position: center top;
 }
 
 h1, h2 {
@@ -67,9 +70,9 @@ h1, h2 {
 }
 
 #summary_banner {
-  background-image: url('../images/cloud-header-repeater.png');
-  background-repeat: repeat-x;
-  background-position: center 110%;
+  //background-image: url('../images/cloud-header-repeater.png');
+  //background-repeat: repeat-x;
+  //background-position: center 110%;
   #summary {
     #book_copy {
       padding-top: 26px;
