@@ -1,0 +1,224 @@
+#header_banner {
+  background-image: url(../images/podcast-header-bg.jpg);
+  height: 200px;
+  background-repeat: repeat-x;
+  background-position: center top;
+
+  h1, h2 {
+    color: #fff;
+  }
+
+  h1 {
+      font-size: 28px;
+      line-height: 34px;
+      margin: 30px 0px 8px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+  h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    font-style: italic;
+    margin-bottom: 6px;
+  }
+
+  input {
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        font-family: "brandon-grotesque";
+        font-size: 16px;
+      }
+
+      input[type="email"] {
+        padding: 8px 8px;
+        width: 58%;
+        margin: 12px 10px 10px 0px;
+        box-shadow: inset 0px 1px 3px rgba(0,0,0,.13);
+
+        /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+        @media only screen and (max-width: 479px) {
+          padding: 10px 6px 10px 10px;
+        }
+      }
+
+      input[type="submit"] {
+        background-color: #59ABCE;
+        color: #f7f7f7;
+        padding: 8px 8px;
+        width: 37%;
+      }
+
+  #left_header {
+    width: 600px;
+    padding-right: 74px;
+    padding-left: 40px;
+    display: inline;
+    float: left;
+  }
+
+  #right_header {
+    padding-right: 90px;
+    padding-top: 16px;
+    width: 156px;
+    float: right;
+    display: inline;
+  }
+}
+
+#podcast_intro_banner {
+  background-color: #f4f1e1;
+  padding: 60px 0px 20px;
+
+  h1, h2 {
+  color: #333;
+  text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px auto 10px;
+  }
+
+  h2 {
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 28px;
+    margin: 10px auto;
+  }
+
+  .divider {
+    width: 70%;
+    margin-top: 50px;
+  }
+}
+
+#podcasts_banner {
+  padding-top: 20px;
+  background-color: #f4f1e1;
+
+  .podcast {
+    padding: 20px 20px;
+    margin-bottom: 50px;
+    background-color: #EAE6D3;
+    border-radius: 3px;
+
+    &:first-child {
+      background-color: #EFECDE;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 300;
+    }
+
+    a {
+      text-decoration: none;
+      color: #DA5640;
+      font-weight: 300;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    span {
+      font-size: 16px;
+    }
+
+    img {
+      width: 100px;
+      float: left;
+      margin: 0px 20px 10px 0px;
+      border-radius: 3px;
+    }
+
+    #listen {
+      padding: 20px 0 40px;
+
+      iframe {
+        float: left;
+        width: 350px;
+
+        /* Any Screen less than 960 (devices and browsers) */
+        @media only screen and (max-width: 959px) {
+          width: 100%;
+          float: none;
+        }
+      }
+
+      .download_options {
+        float: left;
+
+        /* Any Screen less than 960 (devices and browsers) */
+        @media only screen and (max-width: 959px) {
+          padding-top: 0px;
+          float: none;
+        }
+
+        a {
+          font-size: 15px;
+          display: inline;
+          margin-left: 8px;
+          font-weight: 500;
+          padding: 10px 18px;
+          border-radius: 4px;
+
+          &:first-child {
+            margin-left: 23px;
+          }
+
+          /* Any Screen less than 960 (devices and browsers) */
+            @media only screen and (max-width: 959px) {
+              margin-top: 14px;
+              margin-left: 14px
+            }
+
+          &.mp3 {
+            display: inline-block;
+            background-color: #1D6CAF;
+            color: #fff;
+          }
+
+          &.itunes {
+            display: inline-block;
+            background-color: #DA5640;
+            color: #fff;
+          }
+
+
+          &:first-child {
+            /* Any Screen less than 960 (devices and browsers) */
+            @media only screen and (max-width: 959px) {
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+    }
+
+    a.show_notes {
+      display: block;
+      clear: both;
+      font-weight: 500;
+      color: #000;
+    }
+  }
+}
+
+aside {
+  background-color: #000;
+  height: 600px;
+}

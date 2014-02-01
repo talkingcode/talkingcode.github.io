@@ -25,12 +25,11 @@ end
 # with_layout :admin do
 #   page "/admin/*"
 # end
-
 ###
 # Helpers
 ###
 activate :livereload
-
+activate :directory_indexes
 activate :syntax
 
 activate :blog do |blog|
