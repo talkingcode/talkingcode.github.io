@@ -116,6 +116,11 @@
       font-weight: 700;
       font-size: 24px;
       margin-bottom: 14px;
+
+      span.podcast_date {
+       float: right;
+       font-weight: 400;
+      }
     }
 
     p {
@@ -150,7 +155,7 @@
 
       iframe {
         float: left;
-        width: 350px;
+        width: 300px;
 
         /* Any Screen less than 960 (devices and browsers) */
         @media only screen and (max-width: 959px) {
@@ -177,7 +182,7 @@
           border-radius: 4px;
 
           &:first-child {
-            margin-left: 23px;
+            margin-left: 13px;
           }
 
           /* Any Screen less than 960 (devices and browsers) */
@@ -188,7 +193,7 @@
 
           &.mp3 {
             display: inline-block;
-            background-color: #1D6CAF;
+            background-color: #59abce;
             color: #fff;
           }
 
@@ -219,6 +224,108 @@
 }
 
 aside {
-  background-color: #000;
-  height: 600px;
+
+  #upcoming_episodes, #review_us, #hosts {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 6px;
+  }
+
+  ul {
+    list-style-type: square;
+    list-style-position: inside;
+    list-style-image: none;
+  }
+
+  li {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+
+    span {
+      font-size: 12px;
+      float: right;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 22px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #DA5640;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    margin-bottom: 10px;
+  }
+
+
+  .divider {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #review_us {
+    background-color: #135da8;
+    padding: 20px 20px;
+    border-radius: 4px;
+
+    h2 {
+      color: #fff;
+
+      /* Tablet Portrait size to standard 960 (devices and browsers) */
+      @media only screen and (min-width: 768px) and (max-width: 959px) {
+       font-size: 18px;
+      }
+    }
+
+    p {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    a {
+      color: #ebc660;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+
+  .host {
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 2px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 20px auto 10px;
+      border-radius: 500px;
+
+      &:first-child {
+        margin-top: 10px;
+      }
+    }
+  }
 }

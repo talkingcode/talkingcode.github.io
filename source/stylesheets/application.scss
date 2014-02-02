@@ -30,6 +30,7 @@ body {
   font-family: "brandon-grotesque";
 
   &.index {
+    background-image: url(../images/lowpoly-bg.jpg);
     background-color: #f4f1e1;
     background-repeat: repeat-x;
     background-position: center top;
@@ -306,7 +307,7 @@ h1, h2 {
           margin-bottom: 5px;
         }
         span {
-          color: #CD8817;
+          color: #DA5640;
         }
       }
     }
