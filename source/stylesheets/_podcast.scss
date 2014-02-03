@@ -14,6 +14,11 @@
       margin: 30px 0px 8px;
       font-weight: 700;
       letter-spacing: -1px;
+
+      /* Tablet Portrait size to standard 960 (devices and browsers) */
+      @media only screen and (min-width: 768px) and (max-width: 959px) {
+        font-size: 25px;
+      }
     }
 
   h2 {
@@ -22,6 +27,11 @@
     line-height: 23px;
     font-style: italic;
     margin-bottom: 6px;
+
+      /* Tablet Portrait size to standard 960 (devices and browsers) */
+      @media only screen and (min-width: 768px) and (max-width: 959px) {
+        font-size: 17px;
+      }
   }
 
   input {
@@ -30,6 +40,11 @@
         border-radius: 3px;
         font-family: "brandon-grotesque";
         font-size: 16px;
+
+       /* Tablet Portrait size to standard 960 (devices and browsers) */
+        @media only screen and (min-width: 768px) and (max-width: 959px) {
+          font-size: 14px;
+        }
       }
 
       input[type="email"] {
@@ -37,6 +52,12 @@
         width: 58%;
         margin: 12px 10px 10px 0px;
         box-shadow: inset 0px 1px 3px rgba(0,0,0,.13);
+
+         /* Tablet Portrait size to standard 960 (devices and browsers) */
+          @media only screen and (min-width: 768px) and (max-width: 959px) {
+            font-size: 14px;
+            width: 51%;
+          }
 
         /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
         @media only screen and (max-width: 479px) {
@@ -49,6 +70,11 @@
         color: #f7f7f7;
         padding: 8px 8px;
         width: 37%;
+
+        /* Tablet Portrait size to standard 960 (devices and browsers) */
+        @media only screen and (min-width: 768px) and (max-width: 959px) {
+          width: 41%;
+        }
       }
 
   #left_header {
@@ -57,6 +83,13 @@
     padding-left: 40px;
     display: inline;
     float: left;
+
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      width: 524px;
+      padding-left: 0px;
+      padding-right: 53px;
+    }
   }
 
   #right_header {
@@ -65,6 +98,12 @@
     width: 156px;
     float: right;
     display: inline;
+
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      width: 82px;
+      padding-right: 90px;
+    }
   }
 }
 
@@ -150,7 +189,7 @@
       border-radius: 3px;
     }
 
-    #listen {
+    .listen {
       padding: 20px 0 40px;
 
       iframe {
@@ -201,6 +240,11 @@
             display: inline-block;
             background-color: #DA5640;
             color: #fff;
+
+            /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+            @media only screen and (max-width: 479px) {
+              margin-left: 0px;
+            }
           }
 
 
@@ -214,11 +258,52 @@
       }
     }
 
-    a.show_notes {
-      display: block;
-      clear: both;
-      font-weight: 500;
-      color: #000;
+    .podcast_details {
+
+      h4 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 6px;
+      }
+
+      li {
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+
+      .show_notes {
+        float: left;
+        width: 340px;
+        margin-right: 40px;
+      }
+
+      .tweetables {
+        float: right;
+        width: 220px;
+
+        /* Anything smaller than 959 */
+        @media only screen and (max-width: 959px) {
+          float: left;
+          margin-top: 20px;
+          width: 100%;
+        }
+
+        p.tweetable {
+          background-color: #f9f9f4;
+          border-radius: 4px;
+          padding: 10px 10px;
+          text-decoration: italic;
+          font-size: 18px;
+          line-height: 22px;
+          margin-bottom: 14px;
+        }
+
+        .twitter-share-button {
+          margin-top: 4px;
+          display: block;
+        }
+      }
     }
   }
 }
@@ -280,9 +365,14 @@ aside {
   }
 
   #review_us {
-    background-color: #135da8;
+    background-image: url(../images/promo_bg.png);
     padding: 20px 20px;
     border-radius: 4px;
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+      background-image: url(../images/promo_bg_mobile.png);
+    }
 
     h2 {
       color: #fff;
