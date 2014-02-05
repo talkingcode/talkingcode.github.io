@@ -19,6 +19,17 @@
       @media only screen and (min-width: 768px) and (max-width: 959px) {
         font-size: 25px;
       }
+
+      /* All Mobile Sizes (devices and browser) */
+      @media only screen and (max-width: 767px) {
+        font-size: 24px;
+      }
+
+      /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+      @media only screen and (max-width: 479px) {
+        font-size: 22px;
+        line-height: 24px;
+      }
     }
 
   h2 {
@@ -28,10 +39,36 @@
     font-style: italic;
     margin-bottom: 6px;
 
-      /* Tablet Portrait size to standard 960 (devices and browsers) */
-      @media only screen and (min-width: 768px) and (max-width: 959px) {
-        font-size: 17px;
+    &#small_header {
+      display: none;
+    }
+
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      font-size: 17px;
+    }
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+      &#big_header {
+        display: none;
       }
+
+      &#small_header {
+        display: block;
+
+        a {
+          color: #fff;
+          text-decoration: underline;
+        }
+
+        /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+        @media only screen and (max-width: 479px) {
+          font-size: 16px;
+          line-height: 18px;
+        }
+      }
+    }
   }
 
   input {
@@ -45,6 +82,11 @@
         @media only screen and (min-width: 768px) and (max-width: 959px) {
           font-size: 14px;
         }
+
+        /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
+          font-size: 15px;
+        }
       }
 
       input[type="email"] {
@@ -53,15 +95,25 @@
         margin: 12px 10px 10px 0px;
         box-shadow: inset 0px 1px 3px rgba(0,0,0,.13);
 
-         /* Tablet Portrait size to standard 960 (devices and browsers) */
-          @media only screen and (min-width: 768px) and (max-width: 959px) {
-            font-size: 14px;
-            width: 51%;
-          }
+       /* Tablet Portrait size to standard 960 (devices and browsers) */
+        @media only screen and (min-width: 768px) and (max-width: 959px) {
+          font-size: 14px;
+          width: 51%;
+        }
 
         /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
         @media only screen and (max-width: 479px) {
           padding: 10px 6px 10px 10px;
+        }
+
+        /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
+          width: 45%;
+        }
+
+        /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+        @media only screen and (max-width: 479px) {
+          display: none;
         }
       }
 
@@ -71,9 +123,29 @@
         padding: 8px 8px;
         width: 37%;
 
-        /* Tablet Portrait size to standard 960 (devices and browsers) */
-        @media only screen and (min-width: 768px) and (max-width: 959px) {
-          width: 41%;
+        /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
+          width: 46%;
+        }
+
+        /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+        @media only screen and (max-width: 479px) {
+          display: none;
+        }
+      }
+
+      form a {
+        display: none;
+
+        /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+        @media only screen and (max-width: 479px) {
+          display: block;
+          text-decoration: none;
+          background-color: #59ABCE;
+          color: #f7f7f7;
+          padding: 8px 8px;
+          margin-top: 20px;
+          font-weight: 500;
         }
       }
 
@@ -90,6 +162,12 @@
       padding-left: 0px;
       padding-right: 53px;
     }
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+      padding: 0px 0px;
+      width: 100%;
+    }
   }
 
   #right_header {
@@ -103,6 +181,11 @@
     @media only screen and (min-width: 768px) and (max-width: 959px) {
       width: 82px;
       padding-right: 90px;
+    }
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+      display: none;
     }
   }
 }
@@ -333,7 +416,7 @@ aside {
     line-height: 26px;
 
     span {
-      font-size: 12px;
+      font-size: 13px;
       float: right;
     }
   }
