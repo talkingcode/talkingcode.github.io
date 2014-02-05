@@ -9,5 +9,5 @@ $(document).ready(function(){
 
   setTimeout(function(){
     $("#hello-there").animate({top: '0px'}, 500, 'easeOutBounce');
-  }, 1000);
+  }, 1500);
 });
