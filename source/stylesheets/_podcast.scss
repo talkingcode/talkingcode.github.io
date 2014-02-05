@@ -1,8 +1,30 @@
+#hello-there {
+  position: fixed;
+  color: #fff;
+  background: #DA5640;
+  font-weight: 500;
+  font-size: 17px;
+  width: 100%;
+  padding: 11px 0;
+  text-align: center;
+  top: -38px;
+  z-index: 9999;
+
+  a {
+    color: #fff;
+  }
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
 #header_banner {
   background-image: url(../images/podcast-header-bg.jpg);
   height: 200px;
   background-repeat: repeat-x;
   background-position: center top;
+  overflow: hidden;
 
   h1, h2 {
     color: #fff;
@@ -153,14 +175,14 @@
     width: 600px;
     padding-right: 74px;
     padding-left: 40px;
-    display: inline;
     float: left;
+    display: none;
 
     /* Tablet Portrait size to standard 960 (devices and browsers) */
     @media only screen and (min-width: 768px) and (max-width: 959px) {
       width: 524px;
       padding-left: 0px;
-      padding-right: 53px;
+      padding-right: 54px;
     }
 
     /* All Mobile Sizes (devices and browser) */
@@ -171,21 +193,24 @@
   }
 
   #right_header {
-    padding-right: 90px;
-    padding-top: 16px;
-    width: 156px;
+    padding-right: 56px;
+    padding-top: 200px;
+    width: 190px;
     float: right;
     display: inline;
 
     /* Tablet Portrait size to standard 960 (devices and browsers) */
     @media only screen and (min-width: 768px) and (max-width: 959px) {
-      width: 82px;
-      padding-right: 90px;
+      padding-right: 0px;
     }
 
     /* All Mobile Sizes (devices and browser) */
     @media only screen and (max-width: 767px) {
       display: none;
+    }
+
+    a {
+      display: block;
     }
   }
 }
@@ -352,7 +377,8 @@
 
       li {
         font-size: 15px;
-        margin-bottom: 8px;
+        line-height: 18px;
+        margin-bottom: 10px;
       }
 
       .show_notes {
