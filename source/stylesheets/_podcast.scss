@@ -218,7 +218,7 @@ input[type="submit"] {
   }
 }
 
-#podcast_intro_banner {
+#podcast_intro_banner, #thank_you_banner {
   background-color: #f4f1e1;
   padding: 60px 0px 20px;
 
@@ -246,6 +246,13 @@ input[type="submit"] {
     width: 70%;
     margin-top: 50px;
   }
+}
+
+body.thanks_index { background-color: #f4f1e1 }
+#thank_you_banner {
+  padding-top: 100px;
+
+  a { color: #DA5640 }
 }
 
 #podcasts_banner {
