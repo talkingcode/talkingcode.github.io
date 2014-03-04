@@ -429,7 +429,7 @@ body.thanks_index { background-color: #f4f1e1 }
 
 aside {
 
-  #upcoming_episodes, #review_us, #hosts {
+  #subscribe_links, #upcoming_episodes, #review_us, #hosts {
     margin-bottom: 50px;
   }
 
@@ -481,6 +481,24 @@ aside {
   .divider {
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  #subscribe_links {
+    margin-bottom: 30px;
+
+    h2 {
+      margin-bottom: 10px;
+    }
+    a {
+      vertical-align: middle;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
   }
 
   #review_us {
