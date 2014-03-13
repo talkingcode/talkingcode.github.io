@@ -14,6 +14,15 @@
   <div id="podcasts" class="container">
     <section id="podcast_list" class="eleven columns">
 
+
+      <% blog('podcast').articles.each do |episode| %>
+        <article>
+          <h1><a href="<%= episode.url %>"><%= episode.title %></a></h1>
+          <p><%= episode.data.summary %></p>
+        </article>
+      <% end %>
+
+
       <div class="podcast">
         <h3>Episode 7: Mikael Cho<span class="podcast_date">March 6, 2014</span></h3>
         <a href="https://twitter.com/mikaelcho"><img src="/images/mikael_cho.jpg"></a>
@@ -284,7 +293,7 @@
       <div class="podcast">
         <h3>Episode 1: Ryan Hoover<span class="podcast_date">February 5, 2014</span></h3>
         <a href="https://twitter.com/rrhoover"><img src="/images/ryan_hoover.jpeg"></a>
-        <p><a href="https://twitter.com/rrhoover">Ryan</a> shares how he and his partner, Nathan Bashaw, realased the smallest possible version of their product, <a href="http://www.producthunt.co">Product Hunt</a>, in less than a week. You'll also learn his strategies for getting content published on sites like PandoDaily and Fast Company.</p>
+        <p><%= current_page.data.summary %></p>
         <div class="clear"></div>
         <div class="listen">
           <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.fm/e/1488-ep1-ryan-hoover?style=light' width='100%'></iframe>
@@ -326,59 +335,7 @@
       </div><!-- END .podcast -->
     </section><!-- END #podcast_list.twelve.columns -->
 
-    <aside id="sidebar" class="four columns offset-by-one">
-      <div id="subscribe_links">
-        <div class="divider"></div>
-        <h2>Get all the Episodes</h2>
-        <a href="http://simplecast.fm/podcasts/62/rss"><img src="/images/rss.png" width="16">Subscribe via RSS</a>
-        <a href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2"><img src="/images/Itunes.png" width="16">Subscribe on iTunes</a>
-      </div>
-      <div id="upcoming_episodes">
-        <div class="divider"></div>
-        <h2>Upcoming Episodes</h2>
-        <ul>
-          <li>Jeremiah Gardner<span>3/11</span></li>
-          <li>Adii Pienaar<span>3/13</span></li>
-          <li>Brennan Dunn<span>3/18</span></li>
-          <li>Mark Fidelman<span>3/20</span></li>
-          <li>Yashar Ahmadpour<span>3/25</span></li>
-          <li>Tawheed Kader (TK)<span>3/27</span></li>
-          <li>Brant Cooper<span>4/01</span></li>
-          <li>Steve Young<span>4/03</span></li>
-          <li>Suzanne Xie<span>4/08</span></li>
-          <li>Oli Gardner<span>4/10</span></li>
-        </ul>
-      </div>
-      <div id="review_us">
-        <h2>Please Review Us</h2>
-        <img src="/images/stars.png" width= "109">
-        <p>If you like what you hear, please take a second to <a href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2">Review Us on iTunes</a>. We truly appreciate it!</p>
-      </div>
-
-      <div id="hosts">
-        <div class="divider"></div>
-          <h2>About the Hosts</h2>
-          <div class="host">
-          <div class="headshot">
-            <a href="https://twitter.com/michaelsacca"><img src="/images/michael.jpg"></a>
-          </div>
-          <h3> <a href="https://twitter.com/michaelsacca">Michael Sacca</a></h3>
-          <p>Currently building <a href="https://www.brandisty.com/">Brandisty</a>. Founder of <a href="http://www.tinyfactory.co/#!home">Tiny Factory</a>.  <span>Proud father.</span></p>
-        </div><!-- END .host -->
-
-        <div class="host">
-          <a href="https://twitter.com/joellesteiniger"><a href="https://twitter.com/joellesteiniger" class="joelle author"><img src="/images/joelle.png"></a>
-          <h3><a href="https://twitter.com/joellesteiniger">Joelle Steiniger</a></h3>
-          <p>Currently building <a href="http://www.hookfeed.com">HookFeed</a> &amp; <a href="http://www.minimalytics.com">Minimalytics</a>. Co-Founder of <a href="http://www.smallhq.com">Small HQ</a>.  <span>IPA connoisseur.</span></p>
-        </div><!-- END .host -->
-
-        <div class="host">
-          <a href="https://twitter.com/sdmattg"><img src="/images/matt.jpeg"></a>
-          <h3><a href="https://twitter.com/sdmattg">Matt Goldman</a></h3>
-          <p>Currently building <a href="http://www.hookfeed.com">HookFeed</a> &amp; <a href="http://www.minimalytics.com">Minimalytics</a>. Founder of <a href="http://www.smallhq.com">Small HQ</a>.  <span>Likes eggs.</span></p>
-        </div><!-- END .host -->
-      </div>
-    </aside><!-- END #sidebar.four.columns -->
+    <%= partial 'partials/sidebar' %>
   </div><!-- END #podcasts.container -->
 </section><!-- END #podcasts_banner -->
 

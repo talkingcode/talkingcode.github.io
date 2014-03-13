@@ -33,9 +33,17 @@ activate :directory_indexes
 activate :syntax
 
 activate :blog do |blog|
+  blog.name = "blog"
   blog.permalink = ":category/:title.html"
   blog.layout = "blog_layout"
   blog.prefix = "blog"
+end
+
+activate :blog do |blog|
+  blog.name = "podcast"
+  blog.permalink = ":title.html"
+  blog.layout = "podcast_layout"
+  blog.prefix = "podcast"
 end
 
 activate :deploy do |deploy|
