@@ -1,0 +1,32 @@
+#blog_banner, #blogs_banner {
+  background-color: #f4f1e1;
+  padding: 60px 0px 20px;
+}
+
+// List view
+#blogs_banner {
+
+}
+
+// Detail view
+#blog_banner {
+  h1, h2 {
+    color: #333;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px auto 10px;
+  }
+
+  h2 {
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 28px;
+    margin: 10px auto;
+  }
+}
