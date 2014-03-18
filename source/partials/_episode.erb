@@ -27,7 +27,7 @@
       <% episode.data.tweetables.each do |tweetable| %>
         <p class="tweetable">
           "<%= tweetable.quote %>"
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%= episode.url %>" data-text="<%= tweetable.tweet %>" data-count="none">Tweet</a>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://howtobuildarocketship.com<%= episode.url %>" data-text="<%= tweetable.tweet %>" data-count="none">Tweet</a>
         </p>
       <% end %>
     </div><!-- END .tweetables -->

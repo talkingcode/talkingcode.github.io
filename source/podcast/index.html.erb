@@ -15,7 +15,7 @@
     <section id="podcast_list" class="eleven columns">
 
 
-      <% blog('podcast').articles.select{ |article| article.date < Date.today }.each_with_index do |episode, index| %>
+      <% blog('podcast').articles.select{ |article| article.date < Date.today && article.data.published == true }.each_with_index do |episode, index| %>
         <% if index == 0 %>
           <%= partial 'partials/episode', locals: {episode: episode} %>
         <% else %>
@@ -24,7 +24,9 @@
             <a href="<%= episode.data.twitter_url %>"><img src="/images/<%= episode.data.avatar %>"></a>
             <p><%= episode.data.summary %></p>
             <div class="clear"></div>
-            <a class="listen-to-episode" href="<%= episode.url %>">Listen to Episode</a>
+            <div class="listen">
+              <a class="listen-to-episode" href="<%= episode.url %>">Listen to Episode</a>
+            </div>
             <div class="clear"></div>
           </div><!-- END .podcast -->
         <% end %>
