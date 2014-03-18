@@ -3,7 +3,7 @@ name: "Samuel Hulick"
 episode: 2
 published: true
 twitter_url: https://twitter.com/SamuelHulick
-download_url: https://simplecast.fm/media/1517-ep2-samuel-hulick.mp3
+download_url: https://simplecast.fm/media/1517.mp3
 avatar: samuel_hulick.png
 summary: |
   <a href="https://twitter.com/SamuelHulick">Samuel</a>, creator of <a href="http://www.useronboard.com">UserOnboard.com</a>, shared how he was able to grow his audience from 0 to over 3000 in less than 2 months, by creating his own brand of unique, niche content.

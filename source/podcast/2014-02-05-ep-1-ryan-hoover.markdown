@@ -3,7 +3,7 @@ name: "Ryan Hoover"
 episode: 1
 published: true
 twitter_url: https://twitter.com/rrhoover
-download_url: https://simplecast.fm/media/1488-ep1-ryan-hoover.mp3
+download_url: https://simplecast.fm/media/1488.mp3
 avatar: ryan_hoover.jpeg
 summary: |
   <a href="https://twitter.com/rrhoover">Ryan</a> shares how he and his partner, Nathan Bashaw, realased the smallest possible version of their product, <a href="http://www.producthunt.co">Product Hunt</a>, in less than a week. You'll also learn his strategies for getting content published on sites like PandoDaily and Fast Company.
