@@ -52,7 +52,7 @@
 
         <section id="podcast_detail" class="eleven columns">
           <div class="podcast">
-            <h3><%= current_page.data.title %><span class="podcast_date"><%= current_page.date.strftime('%B %-d, %Y') %></span></h3>
+            <h3><%= "Episode #{current_page.data.episode}: #{current_page.data.name}" %><span class="podcast_date"><%= current_page.date.strftime('%B %-d, %Y') %></span></h3>
             <a href="<%= current_page.data.twitter_url %>"><img src="/images/<%= current_page.data.avatar %>"></a>
             <p><%= current_page.data.summary %></p>
             <div class="clear"></div>

@@ -1,5 +1,7 @@
 ---
-title: "Episode 1: Ryan Hoover"
+name: "Ryan Hoover"
+episode: 1
+published: true
 twitter_url: https://twitter.com/rrhoover
 download_url: https://simplecast.fm/media/1488-ep1-ryan-hoover.mp3
 avatar: ryan_hoover.jpeg

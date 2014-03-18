@@ -5,19 +5,27 @@
     <a href="http://simplecast.fm/podcasts/62/rss"><img src="/images/rss.png" width="16">Subscribe via RSS</a>
     <a href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2"><img src="/images/Itunes.png" width="16">Subscribe on iTunes</a>
   </div>
+
+  <div id="past_episodes">
+    <div class="divider"></div>
+    <h2>Past Episodes</h2>
+    <ul>
+      <% blog('podcast').articles.select{ |article| article.data.published == true }.each do |episode| %>
+        <li><%= link_to episode.data.name, episode.url %><span><%= episode.date.strftime('%-m/%-d') %></span></li>
+      <% end %>
+    </ul>
+  </div>
+
   <div id="upcoming_episodes">
     <div class="divider"></div>
     <h2>Upcoming Episodes</h2>
     <ul>
-      <li>Mark Fidelman<span>3/20</span></li>
-      <li>Yashar Ahmadpour<span>3/25</span></li>
-      <li>Tawheed Kader (TK)<span>3/27</span></li>
-      <li>Brant Cooper<span>4/01</span></li>
-      <li>Steve Young<span>4/03</span></li>
-      <li>Suzanne Xie<span>4/08</span></li>
-      <li>Oli Gardner<span>4/10</span></li>
+      <% blog('podcast').articles.select{ |article| article.data.published == false }.reverse.each do |episode| %>
+        <li><%= episode.data.name %><span><%= episode.date.strftime('%-m/%-d') %></span></li>
+      <% end %>
     </ul>
   </div>
+
   <div id="review_us">
     <h2>Please Review Us</h2>
     <img src="/images/stars.png" width= "109">
