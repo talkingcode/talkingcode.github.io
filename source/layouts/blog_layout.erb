@@ -36,6 +36,39 @@
 
     <%= partial 'partials/header' %>
 
+
+
+    <!-- Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+
+    <!-- Google+ -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
+    <!-- Facebook Like Button -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Buffer -->
+    <script type="text/javascript" src="http://static.bufferapp.com/js/button.js"></script>
+
+    <!-- Follow Me Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
     <!-- For Tweet buttons -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
@@ -45,6 +78,45 @@
         <article class="twelve columns offset-by-two">
           <%= yield %>
         </article>
+
+        <section id="sharing_banner">
+          <div id="sharing" class="container">
+            <div class="twelve columns offset-by-two">
+              <div id="rocket_divider"><img src="/images/rocket-icon.png" width="40"></div>
+              <p>If you liked this article it would mean a lot to me if you'd share it!</p>
+              <!-- Twitter -->
+              <div id="twitter">
+                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+              </div><!-- END #twitter -->
+              <!-- Buffer -->
+              <div id="buffer">
+                <a href="http://bufferapp.com/add" class="buffer-add-button" data-count="horizontal">Buffer</a><script type="text/javascript" src="http://static.bufferapp.com/js/button.js"></script>
+              </div><!-- END #buffer -->
+              <!-- Google+ -->
+              <div id="googleplus">
+                <div class="g-plusone"></div>
+              </div><!-- END #googleplus -->
+              <!-- Facebook -->
+              <div id="facebook">
+                <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
+                </div>
+              </div><!-- END #facebook -->
+            </div><!-- END .ten columns offset-by-three -->
+          </div><!-- END #sharing.container -->
+        </section> <!-- END #sharing_banner -->
+
+
+        <!-- promo banner -->
+
+
+        <section id="bio_banner">
+          <div id="bio" class="container">
+            <div class="twelve columns offset-by-two">
+              <h4>About the Author</h4>
+              <%= partial "partials/#{current_page.data.author}" %>
+            </div><!-- END .ten columns offset-by-three -->
+          </div><!-- END #bio.container -->
+        </section> <!-- END #bio_banner -->
       </div>
     </section>
 

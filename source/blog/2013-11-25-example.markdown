@@ -1,10 +1,11 @@
 ---
 title: This is a blog post
 published: false
-excerpt: jdlkf ajsdf al;sdjf lkajds;f
+excerpt: I recently had the chance to talk with email marketing guru and founder of Vero, Chris Hexton. He had some simple, must-follow advice for people who are just starting to build a list. There’s a lot of us out there, which is why I found this particular advice so helpful.
+author: joelle
 ---
 
-<h1>Building an email list? Here’s 3 ways not to blow it.</h1>
+<h1>3 Dead-Simple Tactics for a Killer Early-Stage Email List</h1>
 
 <p>I recently had the chance to talk with email marketing guru and founder of Vero, Chris Hexton.</p>
 <p>He had some simple, must-follow advice for people who are just starting to build a list. There’s a lot of us out there, which is why I found this particular advice so helpful.</p>
@@ -26,12 +27,12 @@ excerpt: jdlkf ajsdf al;sdjf lkajds;f
 
 <strong>Here are the truths:</strong>
 <ul>
-  <li>The people who sign up early in your company’s lifecycle are passionate people — heck, they may have put their email down for something that doesn’t exist yet.</li>
+  <li>The people who sign up early in your company’s lifecycle are passionate people. Heck, they may have put their email down for something that doesn’t exist yet!</li>
   <li>They’ve come to your landing page for a reason, and given you their email. So you’ve got to trust that these are people who are interested in what you have to say.</li>
   <li>They’re going to be supportive. Trust me.</li>
 </ul>
 
-<blockquote>“These are going to be the guys that help grow your business from nothing — they’re going to be your first 10 paying customers.” -Chris</blockquote>
+<blockquote><p>“These are going to be the guys that help grow your business from nothing — they’re going to be your first 10 paying customers.” -Chris</p></blockquote>
 
 <p><strong>You’ve got to just start. But how?</strong></p>
 
@@ -66,7 +67,8 @@ excerpt: jdlkf ajsdf al;sdjf lkajds;f
 <p>If you’re  blogging on your own site, get creative with your calls to action. Why should someone sign up? What value will they get? Dangle some bait and see who many bites you get.</p> 
 
 <p>Here’s a great example from Vero’s blog:</p>
-<img src="http://www.placehold.it/640x300">
+<img src="/images/vero-cta.png">
+<caption>Chris sees about a 13% conversion rate from email course sign-ups to product sign-ups.</caption>
 
 <p>If you’re guest posting on other sites (which is something you should be doing to grow your own exposure) — it’s still okay to have some CTAs to drive people back to your site or get them to sign up for your list.</p> 
 
