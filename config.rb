@@ -33,7 +33,7 @@ activate :syntax
 
 activate :blog do |blog|
   blog.name = "blog"
-  blog.permalink = ":category/:title.html"
+  blog.permalink = ":title.html"
   blog.layout = "blog_layout"
   blog.prefix = "blog"
 end
