@@ -13,7 +13,7 @@
 <section id="podcasts_banner">
   <div id="podcasts" class="container">
     <section id="podcast_list" class="eleven columns">
-      <% blog('podcast').articles.select{ |article| article.date < Date.today && article.data.published == true }.each_with_index do |episode, index| %>
+      <% blog('podcast').articles.select{ |article| article.date <= Time.now && article.data.published == true }.each_with_index do |episode, index| %>
         <% if index == 0 %>
           <%= partial 'partials/episode', locals: {episode: episode} %>
         <% else %>
