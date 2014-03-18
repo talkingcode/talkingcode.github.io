@@ -16,10 +16,14 @@
 
 
       <% blog('podcast').articles.each do |episode| %>
-        <article>
-          <h1><a href="<%= episode.url %>"><%= episode.title %></a></h1>
+        <div class="podcast">
+          <h3><%= link_to episode.data.title, episode.url %><span class="podcast_date"><%= episode.date.strftime('%B %-d, %Y') %></span></h3>
+          <a href="<%= episode.data.twitter_url %>"><img src="/images/<%= episode.data.avatar %>"></a>
           <p><%= episode.data.summary %></p>
-        </article>
+          <div class="clear"></div>
+          <a class="listen-to-episode" href="<%= episode.url %>">Listen to Episode</a>
+          <div class="clear"></div>
+        </div><!-- END .podcast -->
       <% end %>
 
 
@@ -378,92 +382,7 @@
         </div><!-- END .podcast_details -->
       </div><!-- END .podcast -->
 
-      <div class="podcast">
-        <h3>Episode 2: Samuel Hulick<span class="podcast_date">February 11, 2014</span></h3>
-        <a href="https://twitter.com/SamuelHulick"><img src="/images/samuel_hulick.png"></a>
-        <p><a href="https://twitter.com/SamuelHulick">Samuel</a>, creator of <a href="http://www.useronboard.com">UserOnboard.com</a>, shared how he was able to grow his audience from 0 to over 3000 in less than 2 months, by creating his own brand of unique, niche content.</p>
-        <div class="clear"></div>
-        <div class="listen">
-          <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.fm/e/1517-ep2-samuel-hulick?style=light' width='100%'></iframe>
-          <div class="download_options">
-            <a class="mp3" href="https://simplecast.fm/media/1517-ep2-samuel-hulick.mp3">Download mp3</a>
-            <a class="itunes" href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2">Listen on iTunes</a>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="podcast_details">
-          <div class="show_notes">
-            <h4>Show Notes/Links:</h4>
-            <ul>
-              <li><a href="http://www.useronboard.com">User Onboarding</a></li>
-              <li><a href="http://www.useronboard.com/how-lessaccounting-onboards-new-users/">Less Accounting Teardown</a></li>
-              <li><a href="http://www.useronboard.com/how-basecamp-onboards-new-users/">Basecamp Teardown</a></li>
-              <li><a href="http://www.useronboard.com/how-netflix-onboards-new-users/">Netflix Teardown</a></li>
-              <li><a href="http://www.useronboard.com/how-buffer-onboards-new-users/">Buffer Teardown</a></li>
-              <li><a href="https://www.getdrip.com/home-more-leads?utm_expid=66691578-7.TfFbWy9ORfe_nqSxgymClA.1&utm_referrer=https%3A%2F%2Fwww.google.com%2F">Drip</a></li>
-              <li><a href="http://growthhackers.com/">GrowthHackers.com</a></li>
-              <li><a href="https://twitter.com/robwalling">Rob Walling</a></li>
-              <li><a href="https://twitter.com/SeanEllis">Sean Ellis</a></li>
-              <li><a href="http://www.slideshare.net/">SlideShare</a></li>
-              <li><a href="http://www.useronboard.com/features-vs-benefits/">Super Mario Image</a></li>
-              <li>Intro song by Alex Koch of <a href="https://soundcloud.com/digital-dust-studios">Digital Dust Studios</a></li>
-              <li>Outro song: "Favorite Song" by <a href="http://chanceraps.com/">Chance the Rapper</a></li>
-            </ul>
-          </div><!-- END .show_notes -->
-          <div class="tweetables">
-            <h4>Tweetable Bits:</h4>
-            <p class="tweetable">“As soon as I started representing myself as ‘the user onboarding guy’ I suddenly had a lot more ears”<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://howtobuildarocketship.com/podcast" data-text="“As soon as I started representing myself as ‘the user onboarding guy’ I suddenly had a lot more ears” -@SamuelHulick" data-count="none">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
-            <p class="tweetable">“I can’t stress how frustrating it was to know I had good ideas, but nobody that would listen to them”<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://howtobuildarocketship.com/podcast" data-text="“I can’t stress how frustrating it was to know I had good ideas, but nobody that would listen to them” -@SamuelHulick" data-count="none">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
-          </div><!-- END .tweetables -->
-          <div class="clear"></div>
-        </div><!-- END .podcast_details -->
-      </div><!-- END .podcast -->
 
-
-      <div class="podcast">
-        <h3>Episode 1: Ryan Hoover<span class="podcast_date">February 5, 2014</span></h3>
-        <a href="https://twitter.com/rrhoover"><img src="/images/ryan_hoover.jpeg"></a>
-        <p><%= current_page.data.summary %></p>
-        <div class="clear"></div>
-        <div class="listen">
-          <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.fm/e/1488-ep1-ryan-hoover?style=light' width='100%'></iframe>
-          <div class="download_options">
-            <a class="mp3" href="https://simplecast.fm/media/1488-ep1-ryan-hoover.mp3">Download mp3</a>
-            <a class="itunes" href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2">Listen on iTunes</a>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="podcast_details">
-          <div class="show_notes">
-            <h4>Show Notes/Links:</h4>
-            <ul>
-              <li><a href="http://www.producthunt.co">Product Hunt</a></li>
-              <li><a href="http://pando.com/2013/07/10/what-philz-coffee-can-teach-us-about-product-design/">What Philz Coffee Can Teach us About Product Design [PandoDaily]</a></li>
-              <li><a href="http://www.fastcolabs.com/3023152/open-company/the-wisdom-of-the-20-minute-startup">The Wisdom of the 20-Minute Startup [FastCo]</a></li>
-              <li><a href="http://www.fastcolabs.com/3015976/why-these-5-successful-startups-started-as-blogs">Five Successful Startups That Started As Blogs [FastCo]</a></li>
-              <li><a href="http://ryanhoover.me/about">Ryan's Personal Blog</a></li>
-              <li><a href="http://www.quora.com/Startup-Traction/How-do-social-sites-e-g-Hunch-Foursquare-Reddit-Digg-go-from-1-<li>to-100k-users/answer/Ryan-Hoover">Startup Traction: How do social sites (e.g., Hunch, Foursquare, Reddit, Digg) go from 1 to 100k users? [Quora]</a></li>
-              <li><a href="http://quibb.com/">Quibb</a></li>
-              <li><a href="http://video.pandodaily.com/pandomonthly/">PandoMonthly</a></li>
-              <li><a href="https://twitter.com/nbashaw">Nathan Bashaw</a></li>
-              <li><a href="https://twitter.com/sarahcuda">Sarah Lacy</a></li>
-              <li><a href="https://twitter.com/Penenberg">Adam L. Penenberg</a></li>
-              <li><a href="https://twitter.com/carmeldea">Carmel DeAmicis</a></li>
-              <li>Intro song by Alex Koch of <a href="https://soundcloud.com/digital-dust-studios">Digital Dust Studios</a></li>
-              <li>Outro song: "Ivey" by <a href="http://accordioncrimes.bandcamp.com/">Accordion Crime</a></li>
-            </ul>
-          </div><!-- END .show_notes -->
-          <div class="tweetables">
-            <h4>Tweetable Bits:</h4>
-            <p class="tweetable">"Cold emails work most of the time...it's really about how you do it."<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://howtobuildarocketship.com/podcast" data-text="&quot;Cold emails work most of the time...it's really about how you do it.&quot; - @rrhoover" data-count="none">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
-            <p class="tweetable">"I don't have a success metric...it's really the human connection that blogging can enable that makes it super valuable to me." <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://howtobuildarocketship.com/podcast" data-text="&quot;It's really the human connection that blogging can enable that makes it super valuable to me.&quot; @rrhoover" data-count="none">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
-          </div><!-- END .tweetables -->
-          <div class="clear"></div>
-        </div><!-- END .podcast_details -->
-      </div><!-- END .podcast -->
     </section><!-- END #podcast_list.twelve.columns -->
 
     <%= partial 'partials/sidebar' %>

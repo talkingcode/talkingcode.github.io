@@ -29,7 +29,6 @@ end
 # Helpers
 ###
 activate :livereload
-activate :directory_indexes
 activate :syntax
 
 activate :blog do |blog|
@@ -45,6 +44,8 @@ activate :blog do |blog|
   blog.layout = "podcast_layout"
   blog.prefix = "podcast"
 end
+
+activate :directory_indexes
 
 activate :deploy do |deploy|
   deploy.build_before = true

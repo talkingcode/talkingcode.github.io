@@ -278,6 +278,11 @@ body.thanks_index { background-color: #f4f1e1 }
        float: right;
        font-weight: 400;
       }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
     }
 
     p {
@@ -286,7 +291,7 @@ body.thanks_index { background-color: #f4f1e1 }
       font-weight: 300;
     }
 
-    a {
+    p a, .podcast_details a {
       text-decoration: none;
       color: #DA5640;
       font-weight: 300;
@@ -305,6 +310,17 @@ body.thanks_index { background-color: #f4f1e1 }
       float: left;
       margin: 0px 20px 10px 0px;
       border-radius: 3px;
+    }
+
+    .listen-to-episode {
+      display: inline-block;
+      background-color: #DA5640;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 10px 18px;
+      border-radius: 4px;
+      float: right;
     }
 
     .listen {

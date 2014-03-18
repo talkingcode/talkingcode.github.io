@@ -10,7 +10,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "How to Build a Rocketship - Build the right product. Acquire customers. Earn financial freedom." %></title>
+    <title><%= current_page.data.title %> | How to Build a SaaS Rocketship Podcast</title>
 
     <script type="text/javascript" src="//use.typekit.net/hbs4jxm.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -52,12 +52,12 @@
 
         <section id="podcast_detail" class="eleven columns">
           <div class="podcast">
-            <h3><%= current_page.title %><span class="podcast_date">February 5, 2014</span></h3>
-            <a href="<%= current_page.data.guest_twitter %>"><img src="/images/<%= current_page.data.guest_image %>"></a>
-            <p><a href="https://twitter.com/rrhoover">Ryan</a> shares how he and his partner, Nathan Bashaw, realased the smallest possible version of their product, <a href="http://www.producthunt.co">Product Hunt</a>, in less than a week. You'll also learn his strategies for getting content published on sites like PandoDaily and Fast Company.</p>
+            <h3><%= current_page.data.title %><span class="podcast_date"><%= current_page.date.strftime('%B %-d, %Y') %></span></h3>
+            <a href="<%= current_page.data.twitter_url %>"><img src="/images/<%= current_page.data.avatar %>"></a>
+            <p><%= current_page.data.summary %></p>
             <div class="clear"></div>
             <div class="listen">
-              <iframe frameborder='0' height='36px' scrolling='no' seamless src='https://simplecast.fm/e/1488-ep1-ryan-hoover?style=light' width='100%'></iframe>
+              <iframe frameborder='0' height='36px' scrolling='no' seamless src='<%= current_page.data.download_url.gsub('.mp3', '').gsub('/media', '/e') %>?style=light' width='100%'></iframe>
               <div class="download_options">
                 <a class="mp3" href="<%= current_page.data.download_url %>">Download mp3</a>
                 <a class="itunes" href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2">Listen on iTunes</a>
@@ -67,13 +67,22 @@
             <div class="podcast_details">
               <div class="show_notes">
                 <h4>Show Notes/Links:</h4>
-                <%= yield %>
+                <ul>
+                  <% current_page.data.links.each do |link| %>
+                    <li><a href="<%= link.url %>"><%= link.label %></a></li>
+                  <% end %>
+                  <li>Intro song by Alex Koch of <a href="https://soundcloud.com/digital-dust-studios">Digital Dust Studios</a></li>
+                  <li>Outro song: "<%= current_page.data.outro_song %>" by <a href="<%= current_page.data.outro_url %>"><%= current_page.data.outro_artist %></a></li>
+                </ul>
               </div><!-- END .show_notes -->
               <div class="tweetables">
                 <h4>Tweetable Bits:</h4>
-                <p class="tweetable">"Cold emails work most of the time...it's really about how you do it."<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://howtobuildarocketship.com/podcast" data-text="&quot;Cold emails work most of the time...it's really about how you do it.&quot; - @rrhoover" data-count="none">Tweet</a></p>
-                <p class="tweetable">"I don't have a success metric...it's really the human connection that blogging can enable that makes it super valuable to me." <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://howtobuildarocketship.com/podcast" data-text="&quot;It's really the human connection that blogging can enable that makes it super valuable to me.&quot; @rrhoover" data-count="none">Tweet</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+                <% current_page.data.tweetables.each do |tweetable| %>
+                  <p class="tweetable">
+                    "<%= tweetable.quote %>"
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%= current_page.url %>" data-text="<%= tweetable.tweet %>" data-count="none">Tweet</a>
+                  </p>
+                <% end %>
               </div><!-- END .tweetables -->
               <div class="clear"></div>
             </div><!-- END .podcast_details -->
