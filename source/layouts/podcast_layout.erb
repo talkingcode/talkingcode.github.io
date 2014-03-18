@@ -51,42 +51,7 @@
       <div id="podcasts" class="container">
 
         <section id="podcast_detail" class="eleven columns">
-          <div class="podcast">
-            <h3><%= "Episode #{current_page.data.episode}: #{current_page.data.name}" %><span class="podcast_date"><%= current_page.date.strftime('%B %-d, %Y') %></span></h3>
-            <a href="<%= current_page.data.twitter_url %>"><img src="/images/<%= current_page.data.avatar %>"></a>
-            <p><%= current_page.data.summary %></p>
-            <div class="clear"></div>
-            <div class="listen">
-              <iframe frameborder='0' height='36px' scrolling='no' seamless src='<%= current_page.data.download_url.gsub('.mp3', '').gsub('/media', '/e') %>?style=light' width='100%'></iframe>
-              <div class="download_options">
-                <a class="mp3" href="<%= current_page.data.download_url %>">Download mp3</a>
-                <a class="itunes" href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2">Listen on iTunes</a>
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="podcast_details">
-              <div class="show_notes">
-                <h4>Show Notes/Links:</h4>
-                <ul>
-                  <% current_page.data.links.each do |link| %>
-                    <li><a href="<%= link.url %>"><%= link.label %></a></li>
-                  <% end %>
-                  <li>Intro song by Alex Koch of <a href="https://soundcloud.com/digital-dust-studios">Digital Dust Studios</a></li>
-                  <li>Outro song: "<%= current_page.data.outro_song %>" by <a href="<%= current_page.data.outro_url %>"><%= current_page.data.outro_artist %></a></li>
-                </ul>
-              </div><!-- END .show_notes -->
-              <div class="tweetables">
-                <h4>Tweetable Bits:</h4>
-                <% current_page.data.tweetables.each do |tweetable| %>
-                  <p class="tweetable">
-                    "<%= tweetable.quote %>"
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%= current_page.url %>" data-text="<%= tweetable.tweet %>" data-count="none">Tweet</a>
-                  </p>
-                <% end %>
-              </div><!-- END .tweetables -->
-              <div class="clear"></div>
-            </div><!-- END .podcast_details -->
-          </div><!-- END .podcast -->
+          <%= partial 'partials/episode', locals: {episode: current_page} %>
         </section>
 
         <%= partial 'partials/sidebar' %>

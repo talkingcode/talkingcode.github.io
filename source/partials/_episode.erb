@@ -1,0 +1,36 @@
+<div class="podcast">
+  <h3><%= "Episode #{episode.data.episode}: #{episode.data.name}" %><span class="podcast_date"><%= episode.date.strftime('%B %-d, %Y') %></span></h3>
+  <a href="<%= episode.data.twitter_url %>"><img src="/images/<%= episode.data.avatar %>"></a>
+  <p><%= episode.data.summary %></p>
+  <div class="clear"></div>
+  <div class="listen">
+    <iframe frameborder='0' height='36px' scrolling='no' seamless src='<%= episode.data.download_url.gsub('.mp3', '').gsub('/media', '/e') %>?style=light' width='100%'></iframe>
+    <div class="download_options">
+      <a class="mp3" href="<%= episode.data.download_url %>">Download mp3</a>
+      <a class="itunes" href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2">Listen on iTunes</a>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="podcast_details">
+    <div class="show_notes">
+      <h4>Show Notes/Links:</h4>
+      <ul>
+        <% episode.data.links.each do |link| %>
+          <li><a href="<%= link.url %>"><%= link.label %></a></li>
+        <% end %>
+        <li>Intro song by Alex Koch of <a href="https://soundcloud.com/digital-dust-studios">Digital Dust Studios</a></li>
+        <li>Outro song: "<%= episode.data.outro_song %>" by <a href="<%= episode.data.outro_url %>"><%= episode.data.outro_artist %></a></li>
+      </ul>
+    </div><!-- END .show_notes -->
+    <div class="tweetables">
+      <h4>Tweetable Bits:</h4>
+      <% episode.data.tweetables.each do |tweetable| %>
+        <p class="tweetable">
+          "<%= tweetable.quote %>"
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%= episode.url %>" data-text="<%= tweetable.tweet %>" data-count="none">Tweet</a>
+        </p>
+      <% end %>
+    </div><!-- END .tweetables -->
+    <div class="clear"></div>
+  </div><!-- END .podcast_details -->
+</div><!-- END .podcast -->
