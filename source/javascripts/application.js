@@ -6,8 +6,4 @@ $(document).ready(function(){
       $('#right_header').animate({paddingTop: '16px'}, 1000, 'easeOutQuint');
     });
   }, 250);
-
-  setTimeout(function(){
-    $("#hello-there").animate({top: '0px'}, 500, 'easeOutBounce');
-  }, 1500);
 });
