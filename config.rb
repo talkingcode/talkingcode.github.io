@@ -43,7 +43,9 @@ activate :blog do |blog|
   blog.permalink = ":title.html"
   blog.layout = "podcast_layout"
   blog.prefix = "podcast"
+  blog.publish_future_dated = true
 end
+
 
 activate :directory_indexes
 
