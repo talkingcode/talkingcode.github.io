@@ -3,24 +3,128 @@
   <head>
     <meta charset="utf-8">
 
+    <!-- RSS Feed -->
+    <link href="http://simplecast.fm/podcasts/62/rss" rel="alternate" title="The Rocketship Podcast RSS" type="application/rss+xml" />
+
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "How to Build a Rocketship - Build the right product. Acquire customers. Earn financial freedom." %></title>
+    <title><%= current_page.data.title %> | How to Build a Rocketship</title>
 
     <script type="text/javascript" src="//use.typekit.net/hbs4jxm.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag  "application" %>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46464791-1', 'howtobuildarocketship.com');
+      ga('send', 'pageview');
+
+    </script>
   </head>
 
   <body class="<%= page_classes %>">
+
+    <%= partial 'partials/navigation' %>
+
+    <%= partial 'partials/header' %>
+
+
+
+    <!-- Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+
+    <!-- Google+ -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
+    <!-- Facebook Like Button -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Buffer -->
+    <script type="text/javascript" src="http://static.bufferapp.com/js/button.js"></script>
+
+    <!-- Follow Me Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+    <!-- For Tweet buttons -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
     <section id="blog_banner">
       <div id="blog" class="container">
-        <%= yield %>
+
+        <article class="twelve columns offset-by-two">
+          <%= yield %>
+        </article>
+
+        <section id="sharing_banner">
+          <div id="sharing" class="container">
+            <div class="twelve columns offset-by-two">
+              <div id="rocket_divider"><img src="/images/rocket-icon.png" width="40"></div>
+              <p>If you liked this article it would mean a lot to me if you'd share it!</p>
+              <!-- Twitter -->
+              <div id="twitter">
+                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+              </div><!-- END #twitter -->
+              <!-- Buffer -->
+              <div id="buffer">
+                <a href="http://bufferapp.com/add" class="buffer-add-button" data-count="horizontal">Buffer</a><script type="text/javascript" src="http://static.bufferapp.com/js/button.js"></script>
+              </div><!-- END #buffer -->
+              <!-- Google+ -->
+              <div id="googleplus">
+                <div class="g-plusone"></div>
+              </div><!-- END #googleplus -->
+              <!-- Facebook -->
+              <div id="facebook">
+                <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
+                </div>
+              </div><!-- END #facebook -->
+            </div><!-- END .ten columns offset-by-three -->
+          </div><!-- END #sharing.container -->
+        </section> <!-- END #sharing_banner -->
+
+
+
+        <section id="promo_banner">
+          <div class="twelve columns offset-by-two" id="rocketship_promo">
+            <img src="/images/rocketship_promo_blog.png">
+          </div> <!-- END #rocketship_promo -->
+        </section>
+
+
+        <section id="bio_banner">
+          <div id="bio" class="container">
+            <div class="twelve columns offset-by-two">
+              <h4>About the Author</h4>
+              <%= partial "partials/#{current_page.data.author}" %>
+            </div><!-- END .ten columns offset-by-three -->
+          </div><!-- END #bio.container -->
+        </section> <!-- END #bio_banner -->
       </div>
     </section>
+
+    <%= partial 'partials/footer' %>
   </body>
 </html>

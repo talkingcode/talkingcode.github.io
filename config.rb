@@ -29,14 +29,23 @@ end
 # Helpers
 ###
 activate :livereload
-activate :directory_indexes
 activate :syntax
 
 activate :blog do |blog|
-  blog.permalink = ":category/:title.html"
+  blog.name = "blog"
+  blog.permalink = ":title.html"
   blog.layout = "blog_layout"
   blog.prefix = "blog"
 end
+
+activate :blog do |blog|
+  blog.name = "podcast"
+  blog.permalink = ":title.html"
+  blog.layout = "podcast_layout"
+  blog.prefix = "podcast"
+end
+
+activate :directory_indexes
 
 activate :deploy do |deploy|
   deploy.build_before = true

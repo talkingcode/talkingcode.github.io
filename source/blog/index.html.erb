@@ -1,0 +1,20 @@
+<%= partial 'partials/header' %>
+
+
+<section id="blogs_banner">
+  <div id="blogs" class="container">
+    <section id="article_list" class="twelve columns offset-by-two">
+
+
+      <% blog('blog').articles.each do |article| %>
+        <div class="article">
+          <h1><%= link_to article.data.title, article.url %></h1>
+        </div><!-- END .article -->
+      <% end %>
+
+
+    </section><!-- END #article_list.twelve.columns -->
+  </div><!-- END #articles.container -->
+</section><!-- END #articles -->
+
+<%= partial 'partials/footer' %>

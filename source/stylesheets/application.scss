@@ -1,5 +1,6 @@
 @import 'skeleton';
 @import 'podcast';
+@import 'blog';
 
 @font-face {
   font-family: 'icomoon';
@@ -28,6 +29,7 @@
 
 body {
   font-family: "brandon-grotesque";
+  padding-top: 40px;
 
   &.index {
     background-image: url(../images/lowpoly-bg.jpg);
@@ -39,6 +41,32 @@ body {
 
 h1, h2 {
   color: #333;
+}
+
+
+#navigation {
+  position: fixed;
+  z-index: 9999;
+  color: #fff;
+  height:20px;
+  background: #DA5640;
+  font-weight: 500;
+  font-size: 17px;
+  width: 100%;
+  text-align: right;
+  top: 0px;
+  padding: 10px 0;
+
+  a {
+    color: #fff;
+    padding-left: 10px;
+    line-height: 20px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 /*#header_bar_banner {

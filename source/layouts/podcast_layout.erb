@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- RSS Feed -->
+    <link href="http://simplecast.fm/podcasts/62/rss" rel="alternate" title="The Rocketship Podcast RSS" type="application/rss+xml" />
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title %> | How to Build a SaaS Rocketship Podcast</title>
+
+    <script type="text/javascript" src="//use.typekit.net/hbs4jxm.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag  "application" %>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46464791-1', 'howtobuildarocketship.com');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body class="<%= page_classes %>">
+
+    <%= partial 'partials/navigation' %>
+
+    <%= partial 'partials/header' %>
+
+    <!-- For Tweet buttons -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <section id="podcast_intro_banner">
+      <div id="podcast_intro" class="container">
+        <div class="twelve columns offset-by-two">
+          <h1>The Rocketship Podcast</h1>
+          <h2>20 minute interviews with successful SaaS founders about the early days of their business and the activities that helped them succeed at key points along the way.</h2>
+          <div class="divider"></div>
+        </div><!-- END .twelve.columns.offset-by-two -->
+      </div><!-- END #podcast_intro.container -->
+    </section><!-- END #podcast_intro_banner -->
+
+    <section id="podcasts_banner">
+      <div id="podcasts" class="container">
+
+        <section id="podcast_detail" class="eleven columns">
+          <%= partial 'partials/episode', locals: {episode: current_page} %>
+        </section>
+
+        <%= partial 'partials/sidebar' %>
+      </div>
+    </section>
+
+    <%= partial 'partials/footer' %>
+
+  </body>
+</html>
