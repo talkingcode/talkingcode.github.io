@@ -1,7 +1,7 @@
 ---
 name: "Ryan Hoover"
 episode: 1
-published: true
+upcoming: false
 twitter_url: https://twitter.com/rrhoover
 download_url: https://simplecast.fm/media/1488.mp3
 avatar: ryan_hoover.jpeg

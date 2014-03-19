@@ -1,7 +1,7 @@
 ---
 name: "Jeremiah Gardner"
 episode: 8
-published: true
+upcoming: false
 twitter_url: https://twitter.com/JeremiahGardner
 download_url: https://simplecast.fm/media/1791.mp3
 avatar: jeremiah_gardner.jpg

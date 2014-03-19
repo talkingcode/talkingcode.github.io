@@ -1,7 +1,7 @@
 ---
 name: "Adii Pienaar"
 episode: 9
-published: true
+upcoming: false
 twitter_url: https://twitter.com/adii
 download_url: https://simplecast.fm/media/1802.mp3
 avatar: adii_pienaar.png

@@ -1,7 +1,7 @@
 ---
 name: "Todd Garland"
 episode: 3
-published: true
+upcoming: false
 twitter_url: https://twitter.com/toddo
 download_url: https://simplecast.fm/media/1518.mp3
 avatar: todd_garland.jpg

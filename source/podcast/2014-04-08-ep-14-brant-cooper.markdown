@@ -1,7 +1,7 @@
 ---
 name: "Brant Cooper"
 episode: 14
-published: false
+upcoming: true
 twitter_url:
 download_url:
 avatar:

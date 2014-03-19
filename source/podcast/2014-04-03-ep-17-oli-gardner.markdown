@@ -1,7 +1,7 @@
 ---
 name: "Oli Gardner"
 episode: 17
-published: false
+upcoming: true
 twitter_url:
 download_url:
 avatar:

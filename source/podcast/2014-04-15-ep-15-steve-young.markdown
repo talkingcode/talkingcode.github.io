@@ -1,7 +1,7 @@
 ---
 name: "Steve Young"
 episode: 15
-published: false
+upcoming: true
 twitter_url:
 download_url:
 avatar:

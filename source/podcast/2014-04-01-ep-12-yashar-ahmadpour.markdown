@@ -1,7 +1,7 @@
 ---
 name: "Yashar Ahmadpour"
 episode: 12
-published: false
+upcoming: true
 twitter_url:
 download_url:
 avatar:

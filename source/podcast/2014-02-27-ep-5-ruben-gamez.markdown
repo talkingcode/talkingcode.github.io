@@ -1,7 +1,7 @@
 ---
 name: "Ruben Gamez"
 episode: 5
-published: true
+upcoming: false
 twitter_url: https://twitter.com/earthlingworks
 download_url: https://simplecast.fm/media/1699.mp3
 avatar: ruben_gamez.png

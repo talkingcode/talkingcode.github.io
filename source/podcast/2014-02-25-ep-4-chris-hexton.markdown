@@ -1,7 +1,7 @@
 ---
 name: "Chris Hexton"
 episode: 4
-published: true
+upcoming: false
 twitter_url: https://twitter.com/chexton
 download_url: https://simplecast.fm/media/1698.mp3
 avatar: chris_hexton.jpg

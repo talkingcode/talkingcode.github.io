@@ -1,7 +1,7 @@
 ---
 name: "Brennan Dunn"
 episode: 10
-published: true
+upcoming: false
 twitter_url: https://twitter.com/brennandunn
 download_url: https://simplecast.fm/media/1825.mp3
 avatar: brennan_dunn.jpg

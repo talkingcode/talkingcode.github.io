@@ -1,7 +1,7 @@
 ---
 name: "Moritz Plassnig"
 episode: 18
-published: false
+upcoming: true
 twitter_url:
 download_url:
 avatar:

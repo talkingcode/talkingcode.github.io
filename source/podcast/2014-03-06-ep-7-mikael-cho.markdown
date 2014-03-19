@@ -1,7 +1,7 @@
 ---
 name: "Mikael Cho"
 episode: 7
-published: true
+upcoming: false
 twitter_url: https://twitter.com/mikaelcho
 download_url: https://simplecast.fm/media/1765.mp3
 avatar: mikael_cho.jpg

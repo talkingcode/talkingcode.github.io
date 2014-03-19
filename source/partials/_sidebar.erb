@@ -10,7 +10,7 @@
     <div class="divider"></div>
     <h2>Past Episodes</h2>
     <ul>
-      <% blog('podcast').articles.select{ |article| article.data.published == true }.each do |episode| %>
+      <% blog('podcast').articles.select{ |article| article.data.upcoming == false }.each do |episode| %>
         <li><%= link_to episode.data.name, episode.url %><span><%= episode.date.strftime('%-m/%-d') %></span></li>
       <% end %>
     </ul>
@@ -20,7 +20,7 @@
     <div class="divider"></div>
     <h2>Upcoming Episodes</h2>
     <ul>
-      <% blog('podcast').articles.select{ |article| article.data.published == false }.reverse.each do |episode| %>
+      <% blog('podcast').articles.select{ |article| article.data.upcoming == true }.reverse.each do |episode| %>
         <li><%= episode.data.name %><span><%= episode.date.strftime('%-m/%-d') %></span></li>
       <% end %>
     </ul>

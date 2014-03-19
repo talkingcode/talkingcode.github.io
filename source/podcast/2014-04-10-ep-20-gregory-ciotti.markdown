@@ -1,7 +1,7 @@
 ---
 name: "Gregory Ciotti"
 episode: 20
-published: false
+upcoming: true
 twitter_url:
 download_url:
 avatar:

@@ -1,7 +1,7 @@
 ---
 name: "Andrew Torba"
 episode: 19
-published: false
+upcoming: true
 twitter_url:
 download_url:
 avatar:

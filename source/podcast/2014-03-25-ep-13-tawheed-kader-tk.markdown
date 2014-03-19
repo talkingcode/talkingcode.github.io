@@ -1,7 +1,7 @@
 ---
 name: "Tawheed Kader"
 episode: 13
-published: false
+upcoming: true
 twitter_url:
 download_url:
 avatar:

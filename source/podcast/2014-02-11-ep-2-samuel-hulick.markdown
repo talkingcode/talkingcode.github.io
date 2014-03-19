@@ -1,7 +1,7 @@
 ---
 name: "Samuel Hulick"
 episode: 2
-published: true
+upcoming: false
 twitter_url: https://twitter.com/SamuelHulick
 download_url: https://simplecast.fm/media/1517.mp3
 avatar: samuel_hulick.png
