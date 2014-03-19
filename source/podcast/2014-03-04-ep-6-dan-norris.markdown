@@ -1,6 +1,6 @@
 ---
 name: "Dan Norris"
-episode: 5
+episode: 6
 upcoming: false
 twitter_url: https://twitter.com/thedannorris
 download_url: https://simplecast.fm/media/1748.mp3
