@@ -4,7 +4,7 @@
   <p><%= episode.data.summary %></p>
   <div class="clear"></div>
   <div class="listen">
-    <iframe frameborder='0' height='36px' scrolling='no' seamless src='<%= episode.data.download_url.gsub('.mp3', '').gsub('/media', '/e') %>?style=light' width='100%'></iframe>
+    <iframe frameborder='0' height='36px' scrolling='no' seamless src='<%= episode.data.download_url.gsub('.mp3', '').gsub('/media', '/e') unless episode.data.download_url.nil? %>?style=light' width='100%'></iframe>
     <div class="download_options">
       <a class="mp3" href="<%= episode.data.download_url %>">Download mp3</a>
       <a class="itunes" href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2">Listen on iTunes</a>
