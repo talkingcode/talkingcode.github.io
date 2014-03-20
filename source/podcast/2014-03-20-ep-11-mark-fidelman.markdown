@@ -1,7 +1,7 @@
 ---
 name: "Mark Fidelman"
 episode: 11
-upcoming: false
+upcoming: true
 twitter_url: https://twitter.com/markfidelman
 download_url:
 avatar: mark_fidelman.jpg
