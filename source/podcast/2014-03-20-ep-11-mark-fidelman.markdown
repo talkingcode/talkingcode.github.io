@@ -6,7 +6,7 @@ twitter_url: https://twitter.com/markfidelman
 download_url:
 avatar: mark_fidelman.jpg
 summary: |
-  In this episode we talked with <a href="https://twitter.com/markfidelman">Mark Fidelman</a>, <a href="http://www.forbes.com/sites/markfidelman/">Forbes</a> columnist and founder of <a href="https://www.raynforest.com/">Raynforest</a>. He shared some incredible tips for how to get content published and your company promoted in big publications like Forbes. They’re techniques that anyone can use.Great, actionable stuff in this interview.
+  In this episode we talked with <a href="https://twitter.com/markfidelman">Mark Fidelman</a>, <a href="http://www.forbes.com/sites/markfidelman/">Forbes</a> columnist and founder of <a href="https://www.raynforest.com/">Raynforest</a>. He shared some incredible tips for how to get content published and your company promoted in big publications like Forbes. They’re techniques that anyone can use. Great, actionable stuff in this interview.
 outro_song: "Night Zombies / Talkin my Sh*t"
 outro_artist: "Tor & Sufjan Stevens"
 outro_url: http://www.youtube.com/watch?v=T29UH1-jSh4
