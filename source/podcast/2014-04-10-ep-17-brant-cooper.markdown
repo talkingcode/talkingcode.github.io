@@ -1,6 +1,6 @@
 ---
-name: "Tawheed Kader"
-episode: 13
+name: "Brant Cooper"
+episode: 17
 upcoming: true
 twitter_url:
 download_url:

@@ -1,6 +1,6 @@
 ---
-name: "Gregory Ciotti"
-episode: 20
+name: "Tawheed Kader"
+episode: 14
 upcoming: true
 twitter_url:
 download_url:
