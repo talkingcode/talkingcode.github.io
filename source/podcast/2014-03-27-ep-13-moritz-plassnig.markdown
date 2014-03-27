@@ -33,5 +33,5 @@ tweetables:
   - :quote: "It’s important for any product that you find a way to create a ‘wow’ moment - really, really fast."
     :tweet: "&quot;It’s important for any product that you find a way to create a ‘wow’ moment - really, really fast.&quot; @moritzplassnig"
   - :quote: "Focus on doing just a few things. Do them really, really good. Then focus on the next things."
-    :tweet: &quot;Focus on doing just a few things. Do them really, really good. Then focus on the next things.&quot; @moritzplassnig #SaaS"
+    :tweet: "&quot;Focus on doing just a few things. Do them really, really good. Then focus on the next things.&quot; @moritzplassnig #SaaS"
 ---
