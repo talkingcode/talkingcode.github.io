@@ -19,6 +19,8 @@ links:
     :label: "Florian Motlik"
   - :url: https://www.codeship.io/
     :label: "Codeship"
+  - :url: http://blog.codeship.io/
+    :label: "Codeship Blog"
   - :url: http://jenkins-ci.org/
     :label: "Jenkins"
   - :url: https://github.com/
