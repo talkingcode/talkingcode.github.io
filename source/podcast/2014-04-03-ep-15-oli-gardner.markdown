@@ -48,7 +48,7 @@ tweetables:
     :tweet: "&quot;How I approach life in general: I tell everybody what I’m gonna do, so then I have to do it.&quot; -@oligardner"
   - :quote: "Whenever you meet someone, ask them one question. Answer ten."
     :tweet: "&quot;Whenever you meet someone, ask them one question. Answer ten."
-  - :quote: "If I could go back in time when we started Unbounce I would kiss myself on the mouth & change nothing&quot; -@oligardner"
+  - :quote: "If I could go back in time when we started Unbounce I would kiss myself on the mouth & change nothing"
     :tweet: "&quot;If I could go back in time when we started Unbounce I would kiss myself on the mouth & change nothing&quot; -@oligardner"
 ---
 
