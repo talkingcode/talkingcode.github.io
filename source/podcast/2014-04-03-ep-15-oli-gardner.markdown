@@ -1,7 +1,7 @@
 ---
 name: "Oli Gardner"
 episode: 15
-upcoming: true
+upcoming: false
 twitter_url: https://twitter.com/oligardner
 download_url: https://simplecast.fm/media/1969.mp3
 avatar: oli_gardner.jpg
