@@ -9,6 +9,7 @@
       <% blog('blog').articles.each do |article| %>
         <div class="article">
           <h1><%= link_to article.data.title, article.url %></h1>
+          <p><u><%= article.date.strftime('%b. %-d') %></u>: <%= article.data.excerpt %></p>
         </div><!-- END .article -->
       <% end %>
 

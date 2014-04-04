@@ -75,55 +75,60 @@
     <section id="blog_banner">
       <div id="blog" class="container">
 
-        <article class="twelve columns offset-by-two">
+        <article class="ten columns offset-by-three">
           <%= yield %>
         </article>
 
-        <section id="sharing_banner">
-          <div id="sharing" class="container">
-            <div class="twelve columns offset-by-two">
-              <div id="rocket_divider"><img src="/images/rocket-icon.png" width="40"></div>
-              <p>If you liked this article it would mean a lot to me if you'd share it!</p>
-              <!-- Twitter -->
-              <div id="twitter">
-                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-              </div><!-- END #twitter -->
-              <!-- Buffer -->
-              <div id="buffer">
-                <a href="http://bufferapp.com/add" class="buffer-add-button" data-count="horizontal">Buffer</a><script type="text/javascript" src="http://static.bufferapp.com/js/button.js"></script>
-              </div><!-- END #buffer -->
-              <!-- Google+ -->
-              <div id="googleplus">
-                <div class="g-plusone"></div>
-              </div><!-- END #googleplus -->
-              <!-- Facebook -->
-              <div id="facebook">
-                <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
-                </div>
-              </div><!-- END #facebook -->
-            </div><!-- END .ten columns offset-by-three -->
-          </div><!-- END #sharing.container -->
-        </section> <!-- END #sharing_banner -->
-
-
-
-        <section id="promo_banner">
-          <div class="twelve columns offset-by-two" id="rocketship_promo">
-            <img src="/images/rocketship_promo_blog.png">
-          </div> <!-- END #rocketship_promo -->
-        </section>
-
-
-        <section id="bio_banner">
-          <div id="bio" class="container">
-            <div class="twelve columns offset-by-two">
-              <h4>About the Author</h4>
-              <%= partial "partials/#{current_page.data.author}" %>
-            </div><!-- END .ten columns offset-by-three -->
-          </div><!-- END #bio.container -->
-        </section> <!-- END #bio_banner -->
       </div>
     </section>
+
+    <section id="sharing_banner">
+      <div id="sharing" class="container">
+        <div class="twelve columns offset-by-two">
+          <div id="rocket_divider"><img src="/images/rocket-icon.png" width="40"></div>
+          <p>If you liked this article it would mean a lot to me if you'd share it!</p>
+          <!-- Twitter -->
+          <div id="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="SDMattG">Tweet</a>
+          </div><!-- END #twitter -->
+
+          <!-- Buffer -->
+          <div id="buffer">
+            <a href="http://bufferapp.com/add" class="buffer-add-button" data-count="horizontal" data-via="SDMattG">Buffer</a><script type="text/javascript" src="http://static.bufferapp.com/js/button.js"></script>
+          </div><!-- END #buffer -->
+
+          <!-- Google+ -->
+          <div id="googleplus">
+            <div class="g-plusone"></div>
+          </div><!-- END #googleplus -->
+          <!-- Facebook -->
+          <div id="facebook">
+            <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
+            </div>
+          </div><!-- END #facebook -->
+        </div><!-- END .ten columns offset-by-three -->
+      </div><!-- END #sharing.container -->
+    </section> <!-- END #sharing_banner -->
+
+
+
+    <section id="promo_banner">
+      <div id="promo" class="container">
+        <div class="twelve columns offset-by-two" id="rocketship_promo">
+          <a href="http://howtobuildarocketship.com?utm_source=rocketship-blog&utm_medium=blog&utm_campaign=promo"><img src="/images/rocketship_promo_blog.png" class="scale-with-grid"></a>
+        </div> <!-- END #rocketship_promo -->
+      </div>
+    </section>
+
+
+    <section id="bio_banner">
+      <div id="bio" class="container">
+        <div class="twelve columns offset-by-two">
+          <h4>About the Author</h4>
+          <%= partial "partials/#{current_page.data.author}" %>
+        </div><!-- END .ten columns offset-by-three -->
+      </div><!-- END #bio.container -->
+    </section> <!-- END #bio_banner -->
 
     <%= partial 'partials/footer' %>
     <%= partial 'partials/perfect_audience' %>
