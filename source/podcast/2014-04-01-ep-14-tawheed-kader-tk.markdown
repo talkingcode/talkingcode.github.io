@@ -1,5 +1,6 @@
 ---
 name: "Tawheed Kader"
+title: "Tawheed Kader on Quitting a 6-Figure Job to Bootstrap his Startup"
 episode: 14
 upcoming: false
 twitter_url: https://twitter.com/Tawheed

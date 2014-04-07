@@ -1,5 +1,6 @@
 ---
 name: "Adii Pienaar"
+title: "Adii Pienaar Talks New Ventures and Establishing a New Life Balance"
 episode: 9
 upcoming: false
 twitter_url: https://twitter.com/adii

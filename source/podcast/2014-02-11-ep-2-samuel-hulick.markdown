@@ -1,5 +1,6 @@
 ---
 name: "Samuel Hulick"
+title: "Samuel Hulick on Growing his Audience From 0 to 3,000 in Less Than 2 Months"
 episode: 2
 upcoming: false
 twitter_url: https://twitter.com/SamuelHulick

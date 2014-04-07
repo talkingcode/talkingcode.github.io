@@ -1,5 +1,6 @@
 ---
 name: "Ruben Gamez"
+title: "Ruben Gamez on the Power of Integrating With Other Apps"
 episode: 5
 upcoming: false
 twitter_url: https://twitter.com/earthlingworks

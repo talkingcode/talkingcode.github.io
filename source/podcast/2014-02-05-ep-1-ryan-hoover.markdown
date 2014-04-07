@@ -1,5 +1,6 @@
 ---
 name: "Ryan Hoover"
+title: "Ryan Hoover on Launching A Product in Less Than a Week"
 episode: 1
 upcoming: false
 twitter_url: https://twitter.com/rrhoover

@@ -1,5 +1,6 @@
 ---
-name: "Oli Gardner"
+name: "Oli Garnder"
+title: "Oli Garnder on Growing to 100k Users"
 episode: 15
 upcoming: false
 twitter_url: https://twitter.com/oligardner

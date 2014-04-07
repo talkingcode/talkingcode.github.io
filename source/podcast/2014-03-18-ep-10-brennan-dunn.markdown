@@ -1,5 +1,6 @@
 ---
 name: "Brennan Dunn"
+title: "Brennan Dunn and an Eye-Opening New Take on Email Lists"
 episode: 10
 upcoming: false
 twitter_url: https://twitter.com/brennandunn

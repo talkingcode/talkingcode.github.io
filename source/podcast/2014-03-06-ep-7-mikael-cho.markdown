@@ -1,5 +1,6 @@
 ---
 name: "Mikael Cho"
+title: "Mikael Cho on the Power of &quot;Tool Marketing&quot;"
 episode: 7
 upcoming: false
 twitter_url: https://twitter.com/mikaelcho

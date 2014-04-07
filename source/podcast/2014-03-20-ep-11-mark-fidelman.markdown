@@ -1,5 +1,6 @@
 ---
 name: "Mark Fidelman"
+title: "Mark Fidelman on How to Get Content Published in the Majors"
 episode: 11
 upcoming: false
 twitter_url: https://twitter.com/markfidelman

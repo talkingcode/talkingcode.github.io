@@ -1,12 +1,13 @@
 ---
 name: "Moritz Plassnig"
+title: "Moritz Plassnig on Creating &quot;Wow&quot; Moments and the Impact on Engagement"
 episode: 13
 upcoming: false
 twitter_url: https://twitter.com/moritzplassnig
 download_url: https://simplecast.fm/media/1930.mp3
 avatar: moritz_plassnig.jpg
 summary: |
-  We talked with <a href="https://twitter.com/moritzplassnig">Mo Plassnig</a>, co-founder and CEO of <a href="https://www.codeship.io/">Codeship</a>. He talked about how their passion for education, teaching through video and blog posts, is baked into who they are as a company. He also touched on how creating a “wow” factor for people in the first couple minutes of using their product has been huge in moving the needle for them.
+  We talked with <a href="https://twitter.com/moritzplassnig">Mo Plassnig</a>, co-founder and CEO of <a href="https://www.codeship.io/">Codeship</a>. He talked about how their passion for education is baked into who they are as a company. He also shared how creating a “wow” factor for people in the first couple minutes of using their product has been huge in moving the needle.
 outro_song: "Windmill Mathematics BASC Remix"
 outro_artist: "Yasiin Bey aka Mos Def"
 outro_url: https://soundcloud.com/bay-area-sound-collective/yasiin-bey-windmill

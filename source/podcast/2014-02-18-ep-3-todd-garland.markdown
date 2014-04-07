@@ -1,5 +1,6 @@
 ---
 name: "Todd Garland"
+title: "Todd Garland's David & Goliath Story"
 episode: 3
 upcoming: false
 twitter_url: https://twitter.com/toddo

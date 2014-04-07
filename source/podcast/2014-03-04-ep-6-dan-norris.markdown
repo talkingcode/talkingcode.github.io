@@ -1,5 +1,6 @@
 ---
 name: "Dan Norris"
+title: "Dan Norris Talks Failure and New Successes"
 episode: 6
 upcoming: false
 twitter_url: https://twitter.com/thedannorris

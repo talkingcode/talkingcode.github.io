@@ -1,5 +1,6 @@
 ---
 name: "Chris Hexton"
+title: "Chris Hexton's 3 Rules For Early-Stage Email Lists"
 episode: 4
 upcoming: false
 twitter_url: https://twitter.com/chexton

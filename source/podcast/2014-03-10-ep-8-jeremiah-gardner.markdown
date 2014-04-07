@@ -1,5 +1,6 @@
 ---
 name: "Jeremiah Gardner"
+title: "Jeremiah Gardner on How to Use Lean Branding to Find Product Market Fit"
 episode: 8
 upcoming: false
 twitter_url: https://twitter.com/JeremiahGardner

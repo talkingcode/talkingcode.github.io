@@ -252,15 +252,16 @@ body.thanks_index { background-color: #f4f1e1 }
   padding-top: 20px;
   background-color: #f4f1e1;
 
+
   .podcast {
     padding: 20px 20px;
     margin-bottom: 50px;
     background-color: #EFECDE;
     border-radius: 3px;
+    position: relative;
 
     /* All Mobile Sizes (devices and browser) */
     @media only screen and (max-width: 767px) {
-      position: relative;
       padding-top: 50px;
     }
 
@@ -274,7 +275,6 @@ body.thanks_index { background-color: #f4f1e1 }
       margin-bottom: 14px;
 
       span.podcast_date {
-        float: right;
         font-weight: 400;
 
         /* All Mobile Sizes (devices and browser) */
@@ -288,9 +288,22 @@ body.thanks_index { background-color: #f4f1e1 }
       a {
         color: #000;
         text-decoration: none;
+        display: inline-block;
+        width: 480px;
+        line-height: 32px;
 
         &:hover {
           text-decoration: underline;
+        }
+
+        /* Smaller than standard 960 (devices and browsers) */
+        @media only screen and (max-width: 959px) {
+          width: 380px;
+        }
+
+        /* All Mobile Sizes (devices and browser) */
+        @media only screen and (max-width: 767px) {
+          width: 100%;
         }
       }
     }
@@ -313,6 +326,8 @@ body.thanks_index { background-color: #f4f1e1 }
 
     span {
       font-size: 16px;
+      position: absolute;
+      top: 20px;
     }
 
     img {

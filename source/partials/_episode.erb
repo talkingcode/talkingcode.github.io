@@ -1,5 +1,5 @@
 <div class="podcast">
-  <h3><%= link_to "Episode #{episode.data.episode}: #{episode.data.name}", episode.url %><span class="podcast_date"><%= episode.date.strftime('%B %-d, %Y') %></span></h3>
+  <h3><%= link_to "EP#{episode.data.episode}: #{episode.data.title}", episode.url %><span class="podcast_date"><%= episode.date.strftime('%B %-d, %Y') %></span></h3>
 
   <% if episode.data.upcoming == true %>
     <p>Coming Soon!</p>

@@ -1,5 +1,6 @@
 ---
 name: "Gregory Ciotti"
+title: "Gregory Ciotti on Leveraging Content Marketing Materials, Even at Scale"
 episode: 12
 upcoming: false
 twitter_url: https://twitter.com/GregoryCiotti
