@@ -1,5 +1,6 @@
 ---
 name: "Danielle Morrill"
+title:
 episode: 22
 upcoming: true
 twitter_url:

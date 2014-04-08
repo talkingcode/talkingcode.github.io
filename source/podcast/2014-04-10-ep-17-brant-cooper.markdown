@@ -1,5 +1,6 @@
 ---
 name: "Brant Cooper"
+title:
 episode: 17
 upcoming: true
 twitter_url:

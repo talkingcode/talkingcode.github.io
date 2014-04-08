@@ -1,5 +1,6 @@
 ---
 name: "Thomas Schranz"
+title:
 episode: 24
 upcoming: true
 twitter_url:

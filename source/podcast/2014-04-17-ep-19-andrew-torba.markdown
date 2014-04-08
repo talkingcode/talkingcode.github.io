@@ -1,5 +1,6 @@
 ---
 name: "Andrew Torba"
+title:
 episode: 19
 upcoming: true
 twitter_url:

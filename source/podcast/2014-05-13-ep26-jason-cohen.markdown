@@ -1,5 +1,6 @@
 ---
 name: "Jason Cohen"
+title:
 episode: 26
 upcoming: true
 twitter_url:

@@ -1,5 +1,6 @@
 ---
 name: "Cat Noone"
+title:
 episode: 25
 upcoming: true
 twitter_url:

@@ -1,5 +1,6 @@
 ---
 name: "Brendan Schwartz"
+title:
 episode: 21
 upcoming: true
 twitter_url:

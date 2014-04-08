@@ -1,5 +1,6 @@
 ---
 name: "Hiten Shah"
+title:
 episode: 20
 upcoming: true
 twitter_url:

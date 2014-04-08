@@ -1,5 +1,6 @@
 ---
 name: "Steve Young"
+title:
 episode: 18
 upcoming: true
 twitter_url:

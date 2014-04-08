@@ -1,5 +1,6 @@
 ---
 name: "Perri Blake Gorman"
+title:
 episode: 23
 upcoming: true
 twitter_url:
