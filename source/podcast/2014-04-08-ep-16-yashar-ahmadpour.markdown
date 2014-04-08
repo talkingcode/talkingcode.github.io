@@ -1,6 +1,6 @@
 ---
 name: "Yashar Ahmadpour"
-title: "Yashar Ahmadpour on Leveraging Partnerships to Grow a Marketplace App"
+title: "Yashar Ahmadpour's B2B Approach to a Marketplace App"
 episode: 16
 upcoming: false
 twitter_url: https://twitter.com/yashara
