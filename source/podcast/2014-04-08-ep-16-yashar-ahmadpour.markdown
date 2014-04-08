@@ -31,5 +31,5 @@ tweetables:
   - :quote: "If I see a problem, I want to find a solution - that has always been my driving factor."
     :tweet: "&quot;If I see a problem, I want to find a solution. And that has always been my driving factor.&quot; -@yashara #entrepreneurship"
   - :quote: "It’s all about margin optimization. How do you get more customers without spending more money."
-    :tweet: "&quot;It’s all about margin optimization. How do you get more customers without spending more money.&quot; -@yashara"
+    :tweet: "&quot;It’s all about margin optimization. How do you get more customers without spending more money.&quot; -@yashara #startups"
 ---
