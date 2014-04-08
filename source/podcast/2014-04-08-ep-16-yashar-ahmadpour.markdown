@@ -28,8 +28,8 @@ links:
     :label: "CrowdClock on Twitter"
     :label: "Email: info@crowdclock.com"
 tweetables:
-  - :quote: "If I see a problem, I want to find a solution. And that has always been my driving factor."
+  - :quote: "If I see a problem, I want to find a solution - that has always been my driving factor."
     :tweet: "&quot;If I see a problem, I want to find a solution. And that has always been my driving factor.&quot; -@yashara #entrepreneurship"
-  - :quote: "It’s all about margin optimization. How do you get more customers to come through the door without spending more money."
-    :tweet: "&quot;It’s all about margin optimization. How do you get more customers to come through the door without spending more money.&quot; -@yashara"
+  - :quote: "It’s all about margin optimization. How do you get more customers without spending more money."
+    :tweet: "&quot;It’s all about margin optimization. How do you get more customers without spending more money.&quot; -@yashara"
 ---
