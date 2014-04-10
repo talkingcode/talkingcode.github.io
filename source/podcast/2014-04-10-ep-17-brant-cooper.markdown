@@ -8,9 +8,9 @@ download_url: https://simplecast.fm/media/2010.mp3
 avatar: brant_cooper.jpg
 summary: |
   In this episode we talked with <a href="https://twitter.com/brantcooper">Brant Cooper</a>, author of <a href="http://leanentrepreneur.co/">The Lean Entrepreneur</a>, he talks about the common misconceptions around the Lean Startup and how to use early customer interviews to discover the emotional connection that people can have with your product.
-outro_song: ""
-outro_artist: ""
-outro_url:
+outro_song: "Get Money (Zudo Jazz Remix)"
+outro_artist: "Notorious B.I.G."
+outro_url: https://soundcloud.com/z-do-jazz/notorious-b-i-g-get-money-zudo
 links:
   - :url: https://twitter.com/brantcooper
     :label: "Brant Cooper"
