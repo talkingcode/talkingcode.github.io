@@ -21,7 +21,7 @@
     <%= javascript_include_tag  "application" %>
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@<%= current_page.data.twitter_url.split('/').last %>">
+    <meta name="twitter:creator" content="@<%= current_page.data.twitter_url.split('/').last rescue '' %>">
     <meta name="twitter:title" content="<%= current_page.data.title %>">
     <meta name="twitter:description" content="<%= strip_tags(current_page.data.summary) %>">
     <meta name="twitter:image:src" content="http://howtobuildarocketship.com/images/twitter_cards/ryan-hoover.jpg">
