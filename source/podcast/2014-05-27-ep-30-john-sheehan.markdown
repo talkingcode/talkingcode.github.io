@@ -1,5 +1,5 @@
 ---
-name: "Nathan Gilmore"
+name: "John Sheehan"
 title:
 episode: 30
 upcoming: true

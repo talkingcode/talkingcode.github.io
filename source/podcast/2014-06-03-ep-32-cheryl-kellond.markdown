@@ -1,7 +1,7 @@
 ---
-name: "David Sherry"
+name: "Cheryl Kellond"
 title:
-episode: 28
+episode: 32
 upcoming: true
 twitter_url:
 download_url:
