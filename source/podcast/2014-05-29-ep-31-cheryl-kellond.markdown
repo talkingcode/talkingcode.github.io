@@ -1,7 +1,7 @@
 ---
-name: "Cat Noone"
+name: "Cheryl Kellond"
 title:
-episode: 25
+episode: 31
 upcoming: true
 twitter_url:
 download_url:

@@ -1,5 +1,5 @@
 ---
-name: "Danielle Morrill"
+name: "Cat Noone"
 title:
 episode: 22
 upcoming: true

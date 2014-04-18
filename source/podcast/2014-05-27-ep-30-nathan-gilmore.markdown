@@ -1,7 +1,7 @@
 ---
-name: "Brendan Schwartz"
+name: "Nathan Gilmore"
 title:
-episode: 21
+episode: 30
 upcoming: true
 twitter_url:
 download_url:

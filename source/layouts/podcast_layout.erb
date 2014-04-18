@@ -20,6 +20,12 @@
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag  "application" %>
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@<%= current_page.data.twitter_url.split('/').last %>">
+    <meta name="twitter:title" content="<%= current_page.data.title %>">
+    <meta name="twitter:description" content="<%= strip_tags(current_page.data.summary) %>">
+    <meta name="twitter:image:src" content="http://howtobuildarocketship.com/images/twitter_cards/<%= current_page.data.name.parameterize %>.jpg">
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -45,7 +51,7 @@
       <div id="podcast_intro" class="container">
         <div class="twelve columns offset-by-two">
           <h1><a href="/podcast">The Rocketship Podcast</a></h1>
-          <h2>20 minute interviews with successful SaaS founders about the early days of their business and the activities that helped them succeed at key points along the way.</h2>
+          <h2>20 minute interviews with successful startup founders about the early days of their business and the activities that helped them succeed at key points along the way.</h2>
           <div class="divider"></div>
         </div><!-- END .twelve.columns.offset-by-two -->
       </div><!-- END #podcast_intro.container -->

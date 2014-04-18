@@ -1,7 +1,7 @@
 ---
-name: "Thomas Schranz"
+name: "David Sherry"
 title:
-episode: 24
+episode: 28
 upcoming: true
 twitter_url:
 download_url:

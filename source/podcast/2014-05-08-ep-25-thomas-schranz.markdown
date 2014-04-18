@@ -1,7 +1,7 @@
 ---
-name: "Hiten Shah"
+name: "Thomas Schranz"
 title:
-episode: 20
+episode: 25
 upcoming: true
 twitter_url:
 download_url:

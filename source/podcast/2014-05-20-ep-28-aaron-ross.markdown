@@ -1,7 +1,7 @@
 ---
-name: "Perri Blake Gorman"
+name: "Aaron Ross"
 title:
-episode: 23
+episode: 28
 upcoming: true
 twitter_url:
 download_url:
