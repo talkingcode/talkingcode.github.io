@@ -1,6 +1,6 @@
 ---
 name: "Perri Blake Gorman"
-title: "Perri Blake Gorman Talks Relationship Building, Sales, and Balinese Gurus"
+title: "Perri Blake Gorman Talks Relationship Building, The Art of Sales, and Balinese Gurus"
 episode: 21
 upcoming: false
 twitter_url: https://twitter.com/bethebutterfly
