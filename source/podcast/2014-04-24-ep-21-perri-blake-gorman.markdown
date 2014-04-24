@@ -4,7 +4,7 @@ title: "Perri Blake Gorman Talks Relationship Building, The Art of Sales, and Ba
 episode: 21
 upcoming: false
 twitter_url: https://twitter.com/bethebutterfly
-download_url: https://audio.simplecast.fm/2100.mp3
+download_url: https://simplecast.fm/media/2100.mp3
 avatar: perri_blake_gorman.jpg
 summary: |
   <a href="https://twitter.com/bethebutterfly">Perri Blake Gorman</a>, Founder of <a href="">Archive.ly</a> and one of the Co-Founders of <a href="">Unroll.me</a>, talks about how she went from being a head-hunter on Wall Street to a solo, non-technical startup founder. She also shares her process for creating meaningful relationships that pay off in the long-term.
