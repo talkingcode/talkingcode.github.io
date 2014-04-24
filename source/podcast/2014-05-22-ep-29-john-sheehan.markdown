@@ -1,7 +1,7 @@
 ---
 name: "John Sheehan"
 title:
-episode: 30
+episode: 29
 upcoming: true
 twitter_url:
 download_url:

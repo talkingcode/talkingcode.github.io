@@ -1,7 +1,7 @@
 ---
 name: "Aaron Ross"
 title:
-episode: 28
+episode: 30
 upcoming: true
 twitter_url:
 download_url:
