@@ -201,7 +201,7 @@ input[type="submit"] {
   }
 }
 
-#podcast_intro_banner, #thank_you_banner {
+#podcast_intro_banner, #thank_you_banner, #codeship_intro_banner {
   background-color: #f4f1e1;
   padding: 60px 0px 20px;
 
@@ -238,6 +238,21 @@ input[type="submit"] {
   .divider {
     width: 70%;
     margin-top: 50px;
+  }
+
+  h3 {
+    font-size: 18px;
+    text-align: center;
+    color: #3c4555;
+  }
+
+  img {
+    display: inline;
+    vertical-align: middle;
+  }
+
+  a {
+    margin-left: 8px;
   }
 }
 
@@ -497,6 +512,46 @@ aside {
 
   #subscribe_links, #upcoming_episodes, #past_episodes, #review_us, #hosts {
     margin-bottom: 50px;
+  }
+
+  #codeship_promo {
+
+    h2 {
+      background-color: #da5640;
+      padding: 20px 20px;
+      font-size: 24px;
+      text-align: center;
+      line-height: 28px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      color: #fff;
+      margin-bottom: 0px;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+    }
+
+    h3 {
+      background-color: #E27A68;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+      }
+    }
+
+    img#play_button {
+      display: inline;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
   }
 
   #past_episodes li a {
