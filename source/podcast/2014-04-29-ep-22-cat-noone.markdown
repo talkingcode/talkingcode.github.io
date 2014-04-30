@@ -2,7 +2,7 @@
 name: "Cat Noone"
 title: Cat Noone Talks Leaving the Valley to Start Liberio in Berlin
 episode: 22
-upcoming: true
+upcoming: false
 twitter_url: https://twitter.com/imcatnoone
 download_url: https://simplecast.fm/media/2138.mp3
 avatar: cat_noone.jpg
