@@ -11,16 +11,6 @@
     <h3><a href="/codeship"><img src="/images/play_button.png" width="20" id="play_button">Watch Demo</a></h3>
   </div>
 
-  <div id="past_episodes">
-    <div class="divider"></div>
-    <h2>Past Episodes</h2>
-    <ul>
-      <% blog('podcast').articles.select{ |article| article.data.upcoming == false }.each do |episode| %>
-        <li><%= link_to episode.data.name, episode.url %><span><%= episode.date.strftime('%-m/%-d') %></span></li>
-      <% end %>
-    </ul>
-  </div>
-
   <div id="upcoming_episodes">
     <div class="divider"></div>
     <h2>Upcoming Episodes</h2>
@@ -35,6 +25,16 @@
     <h2>Please Review Us</h2>
     <img src="/images/stars.png" width= "109">
     <p>If you like what you hear, please take a second to <a href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2">Review Us on iTunes</a>. We truly appreciate it!</p>
+  </div>
+
+  <div id="past_episodes">
+    <div class="divider"></div>
+    <h2>Past Episodes</h2>
+    <ul>
+      <% blog('podcast').articles.select{ |article| article.data.upcoming == false }.each do |episode| %>
+        <li><%= link_to episode.data.name, episode.url %><span><%= episode.date.strftime('%-m/%-d') %></span></li>
+      <% end %>
+    </ul>
   </div>
 
   <div id="hosts">

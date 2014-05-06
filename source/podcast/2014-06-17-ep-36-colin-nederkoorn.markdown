@@ -1,7 +1,7 @@
 ---
-name: "Cheryl Kellond"
+name: "Colin Nederkoorn"
 title:
-episode: 32
+episode: 36
 upcoming: true
 twitter_url:
 download_url:
