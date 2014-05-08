@@ -7,7 +7,7 @@ twitter_url: https://twitter.com/__tosh
 download_url: https://simplecast.fm/media/2224.mp3
 avatar: thomas_schranz.jpg
 summary: |
-  <a href="https://twitter.com/__tosh">Thomas Schranz</a>, Co-Founder & CEO of <a href="https://www.blossom.io/">Blossom.io</a> talks about how he thinks differently about product management. He doesn’t blindly follow standard agile practices - he picks the right tool for the job and avoids unnecessary process. He also talked with us about Jobs-To-Be-Done and the concept of Minimum Marketable Features.
+  <a href="https://twitter.com/__tosh">Thomas Schranz</a>, Co-Founder & CEO of <a href="https://www.blossom.io/">Blossom.io</a> talks about how he thinks differently about product management. He doesn’t blindly follow standard agile practices - he picks the right tool for the job and avoids unnecessary process. He talks with us about Jobs-To-Be-Done and the concept of Minimum Marketable Features.
 outro_song: "Water Fountain"
 outro_artist: "tUnE-yArDs"
 outro_url: https://www.youtube.com/watch?v=jbiFcPhccu8
