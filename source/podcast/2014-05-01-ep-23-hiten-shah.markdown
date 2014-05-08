@@ -1,6 +1,6 @@
 ---
 name: "Hiten Shah"
-title: Hiten Shah on Early-Stage Growth Tactics and Finding Focus
+title: Hiten Shah on Early-Stage Growth Tactics and Finding Focus"
 episode: 23
 upcoming: false
 twitter_url: https://twitter.com/hnshah

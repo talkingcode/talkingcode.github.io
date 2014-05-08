@@ -1,6 +1,6 @@
 ---
 name: "Andrew Torba"
-title: Andrew Torba on Growing Kuhcoon and Writing Content That Resonates
+title: "Andrew Torba on Growing Kuhcoon and Writing Content That Resonates"
 episode: 19
 upcoming: false
 twitter_url: https://twitter.com/torbahax

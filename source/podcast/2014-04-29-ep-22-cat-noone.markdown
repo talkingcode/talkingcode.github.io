@@ -1,6 +1,6 @@
 ---
 name: "Cat Noone"
-title: Cat Noone Talks Leaving the Valley to Start Liberio in Berlin
+title: "Cat Noone Talks Leaving the Valley to Start Liberio in Berlin"
 episode: 22
 upcoming: false
 twitter_url: https://twitter.com/imcatnoone

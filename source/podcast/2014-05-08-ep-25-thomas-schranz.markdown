@@ -1,6 +1,6 @@
 ---
 name: "Thomas Schranz"
-title: EP25: Thomas Schranz Talks Product Philosophy: JTBD & Minimum Marketable Features
+title: "Thomas Schranz Talks Product Philosophy: JTBD & Minimum Marketable Features"
 episode: 25
 upcoming: false
 twitter_url: https://twitter.com/__tosh

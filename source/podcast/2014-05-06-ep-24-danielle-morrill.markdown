@@ -1,6 +1,6 @@
 ---
 name: "Danielle Morrill"
-title: Danielle Morrill Talks Fundraising, Metrics, and Phenomenal Twitter Rants
+title: "Danielle Morrill Talks Fundraising, Metrics, and Phenomenal Twitter Rants"
 episode: 24
 upcoming: false
 twitter_url: https://twitter.com/DanielleMorrill
