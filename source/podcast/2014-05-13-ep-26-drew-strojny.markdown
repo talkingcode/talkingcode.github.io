@@ -15,7 +15,7 @@ links:
   - :url: https://twitter.com/drewstrojny
     :label: "Drew Strojny"
   - :url: https://thethemefoundry.com/
-    :label: "The Theme Foundery"
+    :label: "The Theme Foundry"
   - :url: https://memberful.com/
     :label: "Memberful"
 tweetables:
