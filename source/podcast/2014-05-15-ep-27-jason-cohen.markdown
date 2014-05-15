@@ -1,6 +1,6 @@
 ---
 name: "Jason Cohen"
-title: "Jason Cohen’s Talks Growth, Pricing, and the Realities of Funding"
+title: "Jason Cohen Talks Growth, Pricing, and the Realities of Funding"
 episode: 27
 upcoming: false
 twitter_url: https://twitter.com/asmartbear
