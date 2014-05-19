@@ -3,7 +3,7 @@ name: "Florian Motlik"
 title: "Continuous Integration and Continuous Deployment with Florian Motlik"
 episode: 1
 upcoming: false
-twitter_url: https://twitter.com/rrhoover
+twitter_url: https://twitter.com/flomotlik
 download_url: https://simplecast.fm/media/1488.mp3
 avatar: florian_motlik.jpeg
 summary: |
@@ -17,8 +17,6 @@ links:
   - :url: http://blog.teamtreehouse.com/use-continuous-integration-continuous-deployment
     :label: "Why You Should Use Continuous Integration and Continuous Deployment [TeamTreehouse]"
 tweetables:
-  - :quote: "Cold emails work most of the time...it's really about how you do it."
-    :tweet: "&quot;Cold emails work most of the time...it's really about how you do it.&quot; - @rrhoover"
-  - :quote: "I don't have a success metric...it's really the human connection that blogging can enable that makes it super valuable to me."
-    :tweet: "&quot;It's really the human connection that blogging can enable that makes it super valuable to me.&quot; @rrhoover"
+  - :quote: "Something about continuous integration and continuous deployment."
+    :tweet: "&quot;Something about continuous integration and continuous deployment.&quot; - @flomotlik"
 ---
