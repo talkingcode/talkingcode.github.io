@@ -390,8 +390,15 @@ body.thanks_index { background-color: #E7EBF0 }
         }
       }
 
-      .download_options {
+      .player {
+        width: 100%;
         float: left;
+      }
+
+      .download_options {
+
+        float: left;
+        margin-top: 14px;
 
         /* Any Screen less than 960 (devices and browsers) */
         @media only screen and (max-width: 959px) {
@@ -400,9 +407,6 @@ body.thanks_index { background-color: #E7EBF0 }
         }
 
         a {
-          &:first-child {
-            margin-left: 10px;
-          }
 
           /* Any Screen less than 960 (devices and browsers) */
           @media only screen and (max-width: 959px) {
