@@ -54,7 +54,7 @@ activate :deploy do |deploy|
 
   deploy.method = :git
   deploy.remote = "github"
-  deploy.branch = "gh-pages"
+  deploy.branch = "master"
 end
 
 set :css_dir, 'stylesheets'
