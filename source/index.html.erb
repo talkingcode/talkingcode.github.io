@@ -1,106 +1,41 @@
-<section id="headline_banner">
-  <div id="headline" class="container">
-    <div class="sixteen columns">
-      <h1>A Profitable Product Launch Doesn't Just Happen.</h1>
-      <h2>Learn how to launch into revenue from <b><u>day one</u></b>.</h2>
-    </div><!-- END .sixteen.columns -->
-  </div><!-- END #headline.container -->
-</section><!-- END #headline_banner -->
-
-<section id="summary_banner">
-  <div id="summary" class="container">
-    <div class="seven columns offset-by-one" id="book_copy">
-      <p>We've brought together our stories as well as interviews with dozens of founders from every step of the journey. We seriously can't wait to share this book with you.</p><br /><br />
-
-      <form action="http://email.demandloyalty.com/t/r/s/tyjtukk/" method="post">
-        <input type="email" name="cm-tyjtukk-tyjtukk" placeholder="Your Email" id="sign_up" required>
-        <input type="submit" value="Download a Free Sample Chapter" id="submit">
-      </form>
-    </div>
-
-    <div class="seven columns" id="book_image">
-      <%= image_tag 'book-cover-121213.png', width: "475", class: 'scale-with-grid' %>
-    </div>
-  </div><!-- END #summary.container -->
-</section><!-- END #summary_banner -->
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
 
 
-<section id="bullet_points_banner">
-  <div id="bullet_points">
-   <div class="container">
-    <div class="sixteen columns">
-      <h2>Products don't just magically make money. There's tons of groundwork that goes into any successful launch. In this book you'll learn our collective techniques for:</h2>
+<section id="podcast_intro_banner">
+  <div id="podcast_intro" class="container">
+    <div class="twelve columns offset-by-two">
+      <h1><a href="/podcast">Talking Code Podcast</a></h1>
+      <h2>Feel like you have to decode what developers say to you? We'll help translate with 20 minute interviews with experts on the basics.</h2>
       <div class="divider"></div>
-    </div><!-- END .sixteen.columns -->
-  </div><!-- END #bullet_points.container -->
-  <div class="container lessons">
-    <div class="one-third column">
-      <span class="glyph">1</span>
-      <h3>Building a quality audience</h3>
-      <p>Generate excitement and validation long before your product is ready. Don't wait until the end and launch to crickets.</p>
-    </div>
-    <div class="one-third column">
-      <span class="glyph">2</span>
-      <h3>Talking to your peers</h3>
-      <p>Strengthen your ideas and approaches by talking to folks who have already been in your shoes. Ask the right questions.</p>
-    </div>
-    <div class="one-third column">
-      <span class="glyph">3</span>
-      <h3>Developing the right product</h3>
-      <p>Hone in to the real pain so you build what your customers actually need. Listen to the problem, not the people.</p>
-    </div>
-  </div>
-  <div class="container lessons">
-    <div class="one-third column">
-      <span class="glyph">4</span>
-      <h3>Generating revenue before launch</h3>
-      <p>Master the art of turning your beta testers into paying customers. Change the conversations you're having.</p>
-    </div>
-    <div class="one-third column">
-      <span class="glyph">5</span>
-      <h3>Launching Your Product</h3>
-      <p>Follow a proven strategy to take your product to market with no advertising budget. Embrace organic sources.</p>
-    </div>
-    <div class="one-third column">
-      <span class="glyph">6</span>
-      <h3>Optimizing Your Funnel</h3>
-      <p>Learn how to develop and optimize your sales funnel as your traffic increases. Move people from <a href="http://500hats.typepad.com/500blogs/2007/09/startup-metrics.html">A-to-ARRR</a>.</p>
-    </div>
-  </div>
-  </div>
-</section><!-- END #bullet_points_banner -->
+    </div><!-- END .twelve.columns.offset-by-two -->
+  </div><!-- END #podcast_intro.container -->
+</section><!-- END #podcast_intro_banner -->
 
+<section id="podcasts_banner">
+  <div id="podcasts" class="container">
+    <section id="podcast_list" class="eleven columns">
+      <% blog('podcast').articles.select{ |article| article.data.upcoming == false }.each_with_index do |episode, index| %>
+        <% if index == 0 %>
+          <%= partial 'partials/episode', locals: {episode: episode} %>
+        <% else %>
+          <div class="podcast">
+            <h3><%= link_to "EP#{episode.data.episode}: #{episode.data.title}", episode.url %><span class="podcast_date"><%= episode.date.strftime('%B %-d, %Y') %></span></h3>
+            <a href="<%= episode.data.twitter_url %>"><img src="/images/<%= episode.data.avatar %>"></a>
+            <p><%= episode.data.summary %></p>
+            <div class="clear"></div>
+            <div class="listen">
+              <a class="listen-to-episode" href="<%= episode.url %>">Listen to Episode</a>
+            </div>
+            <div class="clear"></div>
+          </div><!-- END .podcast -->
+        <% end %>
+      <% end %>
+    </section><!-- END #podcast_list.eleven.columns -->
 
-<section id="authors_banner">
-  <div id="authors" class="container">
-    <div class="sixteen columns">
-      <div class="divider"></div>
-      <h2>Authors</h2>
-
-    </div>
-
-    <div class="sixteen columns" id="headshots">
-      <div class="author">
-        <div class="headshot">
-          <a href="https://twitter.com/michaelsacca" class="michael author"></a>
-        </div>
-        <h3> <a href="https://twitter.com/michaelsacca">Michael Sacca</a></h3>
-        <p>Currently building <a href="https://www.brandisty.com/">Brandisty</a>. Founder of <a href="http://www.tinyfactory.co/#!home">Tiny Factory</a>.  <span>Proud father.</span></p>
-      </div><!-- END .author -->
-
-      <div class="author">
-        <a href="https://twitter.com/joellesteiniger" class="joelle author"></a>
-        <h3><a href="https://twitter.com/joellesteiniger">Joelle Steiniger</a></h3>
-        <p>Currently building <a href="http://www.hookfeed.com">HookFeed</a> &amp; <a href="http://www.minimalytics.com">Minimalytics</a>. Co-Founder of <a href="http://www.smallhq.com">Small HQ</a>.  <span>IPA connoisseur.</span></p>
-      </div><!-- END .author -->
-
-      <div class="author">
-        <a href="https://twitter.com/sdmattg" class="matt author"></a>
-        <h3><a href="https://twitter.com/sdmattg">Matt Goldman</a></h3>
-        <p>Currently building <a href="http://www.hookfeed.com">HookFeed</a> &amp; <a href="http://www.minimalytics.com">Minimalytics</a>. Founder of <a href="http://www.smallhq.com">Small HQ</a>.  <span>Likes eggs.</span></p>
-      </div><!-- END .author -->
-    </div><!-- END #headshots -->
-  </div><!-- END #authors.container -->
-</section><!-- END #authors_banner -->
+    <%= partial 'partials/sidebar' %>
+  </div><!-- END #podcasts.container -->
+</section><!-- END #podcasts_banner -->
 
 <%= partial 'partials/footer' %>
