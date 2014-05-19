@@ -29,13 +29,6 @@
 body {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   padding-top: 40px;
-
-  &.index {
-    background-image: url(../images/lowpoly-bg.jpg);
-    background-color: #E7EBF0;
-    background-repeat: repeat-x;
-    background-position: center top;
-  }
 }
 
 h1, h2 {
@@ -83,7 +76,7 @@ h1, h2 {
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 32px;
       line-height: 46px;
       margin-bottom: 10px;
       font-weight: 700;
