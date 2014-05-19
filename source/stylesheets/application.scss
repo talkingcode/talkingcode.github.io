@@ -1,7 +1,5 @@
 @import 'skeleton';
 @import 'podcast';
-@import 'blog';
-@import 'codeship';
 
 @font-face {
   font-family: 'icomoon';
@@ -29,12 +27,12 @@
 }
 
 body {
-  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   padding-top: 40px;
 
   &.index {
     background-image: url(../images/lowpoly-bg.jpg);
-    background-color: #f4f1e1;
+    background-color: #E7EBF0;
     background-repeat: repeat-x;
     background-position: center top;
   }
@@ -50,7 +48,7 @@ h1, h2 {
   z-index: 9999;
   color: #fff;
   height:20px;
-  background: #DA5640;
+  background: #59ABCE;
   font-weight: 500;
   font-size: 17px;
   width: 100%;
@@ -122,7 +120,7 @@ h1, h2 {
         border: none;
         outline: none;
         border-radius: 3px;
-        font-family: "brandon-grotesque";
+        font-family: 'Open Sans', sans-serif;
         font-size: 18px;
       }
 
@@ -158,19 +156,19 @@ h1, h2 {
 }
 
 .divider {
-  border: 1px solid darken(#f4f1e1, 5%);
+  border: 1px solid darken(#E7EBF0, 5%);
   width: 60%;
   margin: auto;
   margin-bottom: 1em;
 }
 
 #bullet_points_banner {
-  background-color: #f4f1e1;
+  background-color: #E7EBF0;
   padding: 30px 0px 20px;
 
   #bullet_points {
     .glyph {
-      //color: darken(#f4f1e1, 30%);
+      //color: darken(#E7EBF0, 30%);
       color: #2a87b6;
       display: block;
       font-size: 1.6em;
@@ -228,7 +226,7 @@ h1, h2 {
 }
 
 #authors_banner {
-  background: #f4f1e1;
+  background: #E7EBF0;
   padding: 40px 0 50px;
 
   #authors {
@@ -336,7 +334,7 @@ h1, h2 {
           margin-bottom: 5px;
         }
         span {
-          color: #DA5640;
+          color: #59ABCE;
         }
       }
     }
@@ -347,7 +345,7 @@ h1, h2 {
   padding: 16px 0px;
   text-align: center;
   font-size: 14px;
-  background-color: #111;
+  background-color: #44577E;
   color: #e6e6e6;
   line-height: 18px;
 

@@ -38,7 +38,7 @@ input[type="submit"] {
     }
 
   h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     line-height: 23px;
     font-style: italic;
@@ -80,7 +80,7 @@ input[type="submit"] {
         border: none;
         outline: none;
         border-radius: 3px;
-        font-family: "brandon-grotesque";
+        font-family: 'Open Sans', sans-serif;
         font-size: 16px;
 
        /* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -150,7 +150,7 @@ input[type="submit"] {
           color: #f7f7f7;
           padding: 8px 8px;
           margin-top: 20px;
-          font-weight: 500;border: none;
+          font-weight: 600;border: none;
           outline: none;
           border-radius: 3px;
           text-align: center;
@@ -202,7 +202,7 @@ input[type="submit"] {
 }
 
 #podcast_intro_banner, #thank_you_banner, #codeship_intro_banner {
-  background-color: #f4f1e1;
+  background-color: #E7EBF0;
   padding: 60px 0px 20px;
 
   h1, h2 {
@@ -256,16 +256,16 @@ input[type="submit"] {
   }
 }
 
-body.thanks_index { background-color: #f4f1e1 }
+body.thanks_index { background-color: #E7EBF0 }
 #thank_you_banner {
   padding-top: 100px;
 
-  a { color: #DA5640 }
+  a { color: #59ABCE }
 }
 
 #podcasts_banner {
   padding-top: 20px;
-  background-color: #f4f1e1;
+  background-color: #E7EBF0;
 
 
   .podcast {
@@ -281,7 +281,7 @@ body.thanks_index { background-color: #f4f1e1 }
     }
 
     &:nth-child(1) {
-      background-color: #EAE6D3;
+      background-color: #f1f3f6;
     }
 
     h3 {
@@ -325,14 +325,14 @@ body.thanks_index { background-color: #f4f1e1 }
 
     p {
       font-size: 18px;
-      line-height: 22px;
+      line-height: 26px;
       font-weight: 300;
     }
 
     p a, .podcast_details a {
       text-decoration: none;
-      color: #DA5640;
-      font-weight: 300;
+      color: #59ABCE;
+      font-weight: 600;
 
       &:hover {
         text-decoration: underline;
@@ -343,6 +343,7 @@ body.thanks_index { background-color: #f4f1e1 }
       font-size: 16px;
       position: absolute;
       top: 20px;
+      right: 5px;
     }
 
     img {
@@ -356,7 +357,7 @@ body.thanks_index { background-color: #f4f1e1 }
       a {
         font-size: 15px;
         display: inline;
-        font-weight: 500;
+        font-weight: 600;
         padding: 10px 18px;
         border-radius: 4px;
         text-decoration: none;
@@ -367,7 +368,7 @@ body.thanks_index { background-color: #f4f1e1 }
 
         &.listen-to-episode {
           display: inline-block;
-          background-color: #DA5640;
+          background-color: #59ABCE;
           color: #fff;
           margin-left: 0px;
           float: right;
@@ -417,7 +418,7 @@ body.thanks_index { background-color: #f4f1e1 }
 
           &.itunes {
             display: inline-block;
-            background-color: #DA5640;
+            background-color: #A04AD4;
             color: #fff;
 
             /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -441,7 +442,7 @@ body.thanks_index { background-color: #f4f1e1 }
 
       h4 {
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 28px;
         margin-bottom: 6px;
       }
@@ -517,7 +518,7 @@ aside {
   #codeship_promo {
 
     h2 {
-      background-color: #da5640;
+      background-color: #59ABCE;
       padding: 20px 20px;
       font-size: 24px;
       text-align: center;
@@ -562,7 +563,7 @@ aside {
 
   h2 {
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 28px;
     margin-bottom: 6px;
   }
@@ -585,15 +586,15 @@ aside {
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 200;
     line-height: 22px;
   }
 
   a {
     text-decoration: none;
-    color: #DA5640;
-    font-weight: 500;
+    color: #59ABCE;
+    font-weight: 600;
 
     &:hover {
       text-decoration: underline;
@@ -616,7 +617,9 @@ aside {
     h2 {
       margin-bottom: 10px;
     }
+
     a {
+      color: #A04AD4;
       vertical-align: middle;
       margin-bottom: 8px;
       display: block;
@@ -625,11 +628,12 @@ aside {
     img {
       vertical-align: middle;
       margin-right: 10px;
+      margin-top: 7px;
     }
   }
 
   #review_us {
-    background-image: url(../images/promo_bg.png);
+    background: #59ABCE;
     padding: 20px 20px;
     border-radius: 4px;
 
@@ -649,12 +653,12 @@ aside {
 
     p {
       color: #fff;
-      font-weight: 500;
+      font-weight: 400;
     }
 
     a {
       color: #ebc660;
-      font-weight: 500;
+      font-weight: 600;
       text-decoration: underline;
     }
   }
@@ -675,7 +679,7 @@ aside {
       width: 100px;
       height: 100px;
       margin: 20px auto 10px;
-      border-radius: 500px;
+      border-radius: 600px;
 
       &:first-child {
         margin-top: 10px;
