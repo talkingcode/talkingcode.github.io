@@ -1,3 +1,6 @@
+@import "http://fast.fonts.net/cssapi/ed89cf4f-98a8-44a9-952d-0a4ab827449d.css";
+
+@import 'mixins';
 @import 'base';
 
 @import 'skeleton';
@@ -28,23 +31,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+.logo {
+  margin: 0 auto;
+  width: 310px;
+  height: 80px;
+  @include background-image-retina('/images/header_logo', 'png', 310px, 80px);
 }
-
-h1, h2 {
-  color: #333;
-}
-
 
 #navigation {
   position: relative;
   color: #fff;
-  background: #59ABCE;
+  background: url(../images/header_bg.jpg) center center/cover no-repeat;
   width: 100%;
   text-align: left;
   top: 0px;
   padding: 40px 0 180px 0;
+
+  nav {
+    margin-bottom: 80px;
+  }
 
   a {
     color: #fff;
@@ -400,7 +405,9 @@ h1, h2 {
     right: 0;
     margin: auto; 
     top: 70px;
-    width: 68px;
+    width: 64px;
+    height: 46px;
+    @include background-image-retina('/images/footer_icon', 'png', 64px, 46px);
   }
 }
 
@@ -417,7 +424,6 @@ h1, h2 {
 
   h3 {
     font-size: 16px;
-    font-weight: 700;
     margin: 15px 0 10px 0;
   }
 

@@ -8,7 +8,7 @@ twitter_url: https://twitter.com/sandimetz
 download_url: https://simplecast.fm/media/1488.mp3
 avatar: sandi_metz.jpeg
 summary: |
-  <a href="https://twitter.com/flomotlik">Flo</a> tells us about continuous integration, continuous deployment, and why they matter. He breaks it down and shares a little about how his product <a href="http://www.codeship.com">Codeship</a> makes it easier.
+  <a href="https://twitter.com/sandimetz">Sandi Metz</a> talks about how to build future-proof software without having a crystal ball.
 outro_song: "Ivey"
 outro_artist: "Accordion Crime"
 outro_url: http://accordioncrimes.bandcamp.com/

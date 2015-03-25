@@ -1,5 +1,3 @@
-@import "http://fast.fonts.net/cssapi/ed89cf4f-98a8-44a9-952d-0a4ab827449d.css";
-
 $white: white;
 $green: #52ECC6;
 $blue: #5FC4F0;
@@ -20,13 +18,17 @@ html, body {
   background: $white;
 }
 
-h3 {
-  font-family: $font-family-hero;
-}
-
-p {
+body {
   font-family: $font-family-regular;
-  color: $black;
+
+  p {
+    font-family: $font-family-regular;
+    color: $black;
+  }
+
+  h1, h2, h3 {
+    font-family: $font-family-bold;
+  }
 }
 
 a {

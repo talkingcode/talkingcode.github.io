@@ -41,12 +41,14 @@
     </div>
     <div class="podcast_details">
       <div class="show_notes">
+        <% if episode.data.questions %>
         <h4>Questions We Covered</h4>
         <ul>
           <% episode.data.questions.each do |question| %>
             <li><%= question.question %></li>
           <% end %>
         </ul>
+        <% end %>
       </div><!-- END .show_notes -->
       <div class="show_notes">
         <h4>Links:</h4>
