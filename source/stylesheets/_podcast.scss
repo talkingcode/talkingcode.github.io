@@ -535,12 +535,32 @@ aside {
     text-decoration: none;
     padding: 0 20px;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     &.mp3 {
       color: $green;
+      &:before {
+        content: "";
+        display: inline-block;
+        @include background-image-retina('/images/download', 'png', 16px, 16px);
+        width: 16px;
+        height: 16px;
+        margin: 0 6px -3px 0;
+      }
     }
 
     &.itunes {
       color: $blue;
+      &:before {
+        content: "";
+        display: inline-block;
+        @include background-image-retina('/images/mp3', 'png', 16px, 16px);
+        width: 16px;
+        height: 16px;
+        margin: 0 8px -3px 0;
+      }
     }
   }
 }
