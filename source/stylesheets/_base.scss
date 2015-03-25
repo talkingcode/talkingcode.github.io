@@ -1,0 +1,69 @@
+@import "http://fast.fonts.net/cssapi/ed89cf4f-98a8-44a9-952d-0a4ab827449d.css";
+
+$white: white;
+$green: #52ECC6;
+$blue: #5FC4F0;
+$grey: #BBB;
+$black: #424649;
+$light-grey: #EBEBEB;
+
+$font-family-hero: "Brandon Text W01 Black", sans-serif;
+$font-family-bold: "PT Sans W01 Bold", sans-serif;
+$font-family-regular: "PT Sans W01 Regular", sans-serif;
+$font-family-quote: "Freight Display W01 Book", serif;
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  background: $white;
+}
+
+h3 {
+  font-family: $font-family-hero;
+}
+
+p {
+  font-family: $font-family-regular;
+  color: $black;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+.right {
+  float: right;
+}
+
+input {
+  font-family: $font-family-regular;
+  border: none;
+  padding: 13px 12px;
+  font-size: 18px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+button {
+  padding: 13px 10px;
+  color: $white;
+  background: $green;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.5s ease;
+  font-family: $font-family-regular;
+  &:hover {
+    background: $blue;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:active {
+    background: darken($blue, 10%);
+  }
+}

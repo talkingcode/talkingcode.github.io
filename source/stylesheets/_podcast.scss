@@ -201,8 +201,7 @@ input[type="submit"] {
   }
 }
 
-#podcast_intro_banner, #thank_you_banner, #codeship_intro_banner {
-  background-color: #E7EBF0;
+#thank_you_banner {
   padding: 60px 0px 20px;
 
   h1, h2 {
@@ -253,263 +252,6 @@ input[type="submit"] {
 
   a {
     margin-left: 8px;
-  }
-}
-
-body.thanks_index { background-color: #E7EBF0 }
-#thank_you_banner {
-  padding-top: 100px;
-
-  a { color: #59ABCE }
-}
-
-#podcasts_banner {
-  padding-top: 20px;
-  background-color: #E7EBF0;
-
-
-  .podcast {
-    padding: 20px 20px;
-    margin-bottom: 50px;
-    background-color: #EFECDE;
-    border-radius: 3px;
-    position: relative;
-
-    /* All Mobile Sizes (devices and browser) */
-    @media only screen and (max-width: 767px) {
-      padding-top: 50px;
-    }
-
-    &:nth-child(1) {
-      background-color: #f1f3f6;
-    }
-
-    h3 {
-      font-weight: 400;
-      font-size: 24px;
-      margin-bottom: 14px;
-
-      span.podcast_date {
-        font-weight: 400;
-
-        /* All Mobile Sizes (devices and browser) */
-        @media only screen and (max-width: 767px) {
-          position: absolute;
-          top:20px;
-          left:20px;
-        }
-      }
-
-      a {
-        color: #000;
-        text-decoration: none;
-        display: inline-block;
-        width: 480px;
-        line-height: 32px;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-        /* Smaller than standard 960 (devices and browsers) */
-        @media only screen and (max-width: 959px) {
-          width: 380px;
-        }
-
-        /* All Mobile Sizes (devices and browser) */
-        @media only screen and (max-width: 767px) {
-          width: 100%;
-        }
-      }
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 26px;
-      font-weight: 300;
-    }
-
-    p a, .podcast_details a {
-      text-decoration: none;
-      color: #59ABCE;
-      font-weight: 600;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    span {
-      font-size: 16px;
-      position: absolute;
-      top: 20px;
-      right: 5px;
-    }
-
-    img {
-      width: 100px;
-      float: left;
-      margin: 0px 20px 10px 0px;
-      border-radius: 3px;
-    }
-
-    .listen {
-      a {
-        font-size: 15px;
-        display: inline;
-        font-weight: 600;
-        padding: 10px 18px;
-        border-radius: 4px;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-        &.listen-to-episode {
-          display: inline-block;
-          background-color: #59ABCE;
-          color: #fff;
-          margin-left: 0px;
-          float: right;
-        }
-      }
-    }
-
-    .listen {
-      padding: 20px 0 40px;
-
-      iframe {
-        float: left;
-        width: 333px;
-
-        /* Any Screen less than 960 (devices and browsers) */
-        @media only screen and (max-width: 959px) {
-          width: 100%;
-          float: none;
-        }
-      }
-
-      .player {
-        width: 100%;
-        float: left;
-      }
-
-      .download_options {
-
-        float: left;
-        margin-top: 14px;
-
-        /* Any Screen less than 960 (devices and browsers) */
-        @media only screen and (max-width: 959px) {
-          padding-top: 0px;
-          float: none;
-        }
-
-        a {
-
-          /* Any Screen less than 960 (devices and browsers) */
-          @media only screen and (max-width: 959px) {
-            margin-top: 14px;
-            margin-left: 14px
-          }
-
-          &.mp3 {
-            display: inline-block;
-            background-color: #59abce;
-            color: #fff;
-          }
-
-          &.itunes {
-            display: inline-block;
-            background-color: #A04AD4;
-            color: #fff;
-
-            /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-            @media only screen and (max-width: 479px) {
-              margin-left: 0px;
-            }
-          }
-
-
-          &:first-child {
-            /* Any Screen less than 960 (devices and browsers) */
-            @media only screen and (max-width: 959px) {
-              margin-left: 0px;
-            }
-          }
-        }
-      }
-    }
-
-    .podcast_details {
-
-      h4 {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 28px;
-        margin-bottom: 6px;
-      }
-
-      li {
-        font-size: 15px;
-        line-height: 18px;
-        margin-bottom: 10px;
-      }
-
-      .show_notes {
-        float: left;
-        width: 340px;
-        margin-right: 40px;
-
-        /* Smaller than standard 960 (devices and browsers) */
-        @media only screen and (max-width: 959px) {
-          margin-right: 0px;
-        }
-
-        /* Tablet Portrait size to standard 960 (devices and browsers) */
-        @media only screen and (min-width: 768px) and (max-width: 959px) {
-          width: 470px;
-        }
-
-        /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-        @media only screen and (min-width: 480px) and (max-width: 767px) {
-          width: 380px;
-        }
-
-        /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-        @media only screen and (max-width: 479px) {
-          width: 260px;
-        }
-      }
-
-      .tweetables {
-        float: right;
-        width: 220px;
-
-        /* Anything smaller than 959 */
-        @media only screen and (max-width: 959px) {
-          float: left;
-          margin-top: 20px;
-          width: 100%;
-        }
-
-        p.tweetable {
-          background-color: #f9f9f4;
-          border-radius: 4px;
-          padding: 10px 10px;
-          text-decoration: italic;
-          font-size: 18px;
-          line-height: 22px;
-          margin-bottom: 14px;
-        }
-
-        .twitter-share-button {
-          margin-top: 8px;
-          display: block;
-        }
-      }
-    }
   }
 }
 
@@ -669,6 +411,17 @@ aside {
 
   .host {
 
+    position: relative;
+
+    .headshot {
+      width: 50px;
+      float: left;
+    }
+
+    .bio {
+      float: left;
+    }
+
     h3 {
       font-size: 16px;
       margin-bottom: 2px;
@@ -680,13 +433,155 @@ aside {
     }
 
     img {
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       margin: 20px auto 10px;
       border-radius: 600px;
 
       &:first-child {
         margin-top: 10px;
+      }
+    }
+  }
+}
+
+.podcast {
+  h1 {
+    margin-top: 40px;
+    font-family: $font-family-hero;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: $black;
+  }
+}
+
+.podcast-photo {
+  img {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+  }
+}
+
+.podcast-header {
+  z-index: 999;
+  margin-top: -100px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  p {
+    margin-top: 15px;
+    font-size: 18px;
+    .date {
+      color: $grey;
+    }
+  }
+}
+
+.podcast-upcoming {
+
+  margin: 80px 0 40px 0;
+
+  p {
+    text-align: center;
+    margin-bottom: 10px;
+
+    &:first-child {
+      font-family: $font-family-bold;
+      font-size: 18px;
+    }
+  }
+}
+
+.player {
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+
+  iframe {
+    $left: darken(#62C9F9, 30%);
+    $right: darken(#5EEDC9, 30%);
+    background-image: linear-gradient(to right,$left,$right);
+    border-radius: 5px;
+  }
+}
+
+.podcast-summary {
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 760px;
+  margin: 0 auto;
+
+  a {
+    color: $black;
+    text-decoration: none;
+    border-bottom: 1px solid $blue;
+    padding-bottom: 2px;
+    font-weight: 700;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.podcast-download-options {
+  margin: 30px 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $light-grey;
+  text-align: center;
+  font-family: $font-family-bold;
+  a {
+    text-decoration: none;
+    padding: 0 20px;
+
+    &.mp3 {
+      color: $green;
+    }
+
+    &.itunes {
+      color: $blue;
+    }
+  }
+}
+
+.podcast-item {
+  margin: 40px 0;
+
+  .podcast-item-photo {
+    float: left;
+  }
+
+  .podcast-item-content {
+    padding-left: 110px;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+  }
+
+  h3 {
+    font-family: $font-family-hero;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-size: 28px;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &.is-upcoming {
+    a {
+      color: $grey;
+      &:hover {
+        color: $blue;
       }
     }
   }

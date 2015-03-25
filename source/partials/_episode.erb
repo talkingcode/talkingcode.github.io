@@ -1,39 +1,67 @@
-<div class="podcast">
-  <h3><%= link_to "EP#{episode.data.episode}: #{episode.data.title}", episode.url %><span class="podcast_date"><%= episode.date.strftime('%B %-d, %Y') %></span></h3>
+<% upcoming_class = episode.data.upcoming ? "is-upcoming" : "" %>
+<% date = episode.data.upcoming ? "Upcoming" : episode.date.strftime('%B %-d, %Y') %>
+
+<script type="text/javascript">
+  $('iframe .simplecast-player').css({'background-image': 'linear-gradient(to right, #0782bb, #12a07c);'});
+</script>
+
+<div class="podcast <%= upcoming_class %>">
+
+  <div class="podcast-header">
+    <div class="podcast-photo">
+      <img src="/images/<%= episode.data.avatar %>">
+    </div>
+    <h1><%= episode.data.title %></h1>
+    <p><%= episode.data.name %> of <strong><%= episode.data.company %></strong> <span class="date">| <%= date %></span></p>
+  </div>
 
   <% if episode.data.upcoming == true %>
-    <p>Coming Soon!</p>
+    <div class="podcast-upcoming">
+      <p>This episode will be released soon!</p>
+      <p>Enter your email below and we'll let you know when it's ready to go!</p>
+    </div>
+    <div class="eight columns offset-by-four">
+      <div class="email-subscription is-on-white-background clearfix">
+        <input type="email" placeholder="you@email.com" spellcheck="false" />
+        <button type="submit">Keep me updated!</button>
+      </div>
+    </div>
   <% else %>
-    <a href="<%= episode.data.twitter_url %>"><img src="/images/<%= episode.data.avatar %>"></a>
-    <p><%= episode.data.summary %></p>
-    <div class="clear"></div>
     <div class="listen">
       <div class="player">
         <iframe frameborder='0' height='36px' scrolling='no' seamless src='<%= episode.data.download_url.gsub('.mp3', '').gsub('/media', '/e') unless episode.data.download_url.nil? %>?style=light' width='100%'></iframe>
       </div>
-      <div class="download_options">
-        <a class="mp3" href="<%= episode.data.download_url %>">Download mp3</a>
-        <a class="itunes" href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2">Listen on iTunes</a>
-      </div>
-      <div class="clear"></div>
+    </div>
+    <div class="podcast-summary">
+      <p><%= episode.data.summary %></p>
+    </div>
+    <div class="podcast-download-options">
+      <a class="mp3" href="<%= episode.data.download_url %>">Download MP3</a>
+      <a class="itunes" href="https://itunes.apple.com/us/podcast/the-rocketship-podcast/id808014240?mt=2">Listen on iTunes</a>
     </div>
     <div class="podcast_details">
       <div class="show_notes">
-        <h4>Show Notes/Links:</h4>
+        <h4>Questions We Covered</h4>
+        <ul>
+          <% episode.data.questions.each do |question| %>
+            <li><%= question.question %></li>
+          <% end %>
+        </ul>
+      </div><!-- END .show_notes -->
+      <div class="show_notes">
+        <h4>Links:</h4>
         <ul>
           <% episode.data.links.each do |link| %>
             <li><a href="<%= link.url %>"><%= link.label %></a></li>
           <% end %>
-          <li>Intro song by Alex Koch of <a href="https://soundcloud.com/digital-dust-studios">Digital Dust Studios</a></li>
-          <li>Outro song: "<%= episode.data.outro_song %>" by <a href="<%= episode.data.outro_url %>"><%= episode.data.outro_artist %></a></li>
         </ul>
       </div><!-- END .show_notes -->
       <div class="tweetables">
-        <h4>Tweetable Bits:</h4>
+        <h4>Best Quotes:</h4>
         <% episode.data.tweetables.each do |tweetable| %>
           <p class="tweetable">
             "<%= tweetable.quote %>"
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://howtobuildarocketship.com<%= episode.url %>" data-text="<%= tweetable.tweet %>" data-count="none" data-size="large">Tweet</a>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://talkingcode.com<%= episode.url %>" data-text="<%= tweetable.tweet %>" data-count="none" data-size="large">Tweet</a>
           </p>
         <% end %>
       </div><!-- END .tweetables -->

@@ -1,3 +1,5 @@
+@import 'base';
+
 @import 'skeleton';
 @import 'podcast';
 
@@ -28,7 +30,6 @@
 
 body {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  padding-top: 40px;
 }
 
 h1, h2 {
@@ -37,22 +38,22 @@ h1, h2 {
 
 
 #navigation {
-  position: fixed;
-  z-index: 9999;
+  position: relative;
   color: #fff;
   background: #59ABCE;
-  font-weight: 600;
-  font-size: 24px;
   width: 100%;
   text-align: left;
   top: 0px;
-  padding: 15px 0;
+  padding: 40px 0 180px 0;
 
   a {
     color: #fff;
+    font-family: $font-family-bold;
+    font-size: 15px;
     padding-left: 24px;
     line-height: 20px;
     text-decoration: none;
+    text-transform: uppercase;
 
     &:hover {
       text-decoration: underline;
@@ -333,19 +334,99 @@ h1, h2 {
   }
 }
 
-#footer_banner {
-  padding: 16px 0px;
+.explainer {
+  margin: 20px 0 40px 0;
+  font-size: 28px;
+  line-height: 32px;
   text-align: center;
-  font-size: 14px;
-  background-color: #44577E;
-  color: #e6e6e6;
-  line-height: 18px;
+  p {
+    color: white;
+    font-family: $font-family-quote;
+  }
+}
 
-  #footer a {
-    color: #fff;
+.email-subscription {
+  border-radius: 8px;
+  border: 1px solid $white;
+
+  transition: border-color 0.3s ease;
+
+  padding: 3px;
+
+  &.is-on-white-background {
+    border-color: $grey;
+
+    input {
+      color: $black;
+
+      &::-webkit-input-placeholder { color: #AAA; }
+      &:-moz-placeholder { color: #AAA; }
+      &::-moz-placeholder { color: #AAA; }
+      &:-ms-input-placeholder { color: #AAA; }
+    }
   }
 
-  span {
+  input {
+    width: 50%;
+    background: transparent;
+    color: white;
+
+    &::-webkit-input-placeholder { color: #EAEAEA; }
+    &:-moz-placeholder { color: #EAEAEA; }
+    &::-moz-placeholder { color: #EAEAEA; }
+    &:-ms-input-placeholder { color: #EAEAEA; }
+  }
+
+  button {
+    width: 40%;
+    float: right;
     font-weight: 700;
+  }
+}
+
+#footer {
+  margin: 50px 0;
+}
+
+.footer-content {
+  position: relative;
+  padding: 50px 0;
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+
+  .little-logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    top: 70px;
+    width: 68px;
+  }
+}
+
+.host {
+  float: left;
+  width: 50%;
+  text-align: center;
+
+  img {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 15px 0 10px 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .twitter-follow-button {
+    color: transparent;
+    margin-top: 15px;
   }
 }
