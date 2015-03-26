@@ -3,7 +3,7 @@ name: "Florian Motlik"
 company: "Codeship"
 title: "Continuous Integration and Continuous Deployment"
 episode: 1
-upcoming: false
+upcoming: true
 twitter_url: https://twitter.com/flomotlik
 download_url: https://simplecast.fm/media/1488.mp3
 avatar: florian_motlik.jpeg

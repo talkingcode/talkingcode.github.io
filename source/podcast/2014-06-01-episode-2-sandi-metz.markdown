@@ -3,7 +3,7 @@ name: "Sandi Metz"
 company: "Practical Object-Oriented Design in Ruby"
 title: "Object-Oriented Design"
 episode: 2
-upcoming: false
+upcoming: true
 twitter_url: https://twitter.com/sandimetz
 download_url: https://simplecast.fm/media/1488.mp3
 avatar: sandi_metz.jpeg

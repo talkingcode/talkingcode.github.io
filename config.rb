@@ -49,12 +49,21 @@ end
 
 activate :directory_indexes
 
-activate :deploy do |deploy|
-  deploy.build_before = true
+# activate :deploy do |deploy|
+#   deploy.build_before = true
 
-  deploy.method = :git
-  deploy.remote = "github"
-  deploy.branch = "master"
+#   deploy.method = :git
+#   deploy.remote = "github"
+#   deploy.branch = "master"
+# end
+
+activate :deploy do |deploy|
+  deploy.method       = :sftp
+  deploy.host         = ENV['SFTP_HOST']
+  deploy.port         = ENV['SFTP_PORT']
+  deploy.path         = '/var/www/talkingcode.com/html'
+  deploy.user         = ENV["SFTP_USER"]
+  deploy.build_before = true # default: false
 end
 
 set :css_dir, 'stylesheets'
@@ -66,19 +75,29 @@ set :markdown, fenced_code_blocks: true, smartypants: true
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
+  activate :gzip
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
 
   # Enable cache buster
   activate :asset_hash, ignore: [/^images\/twitter_cards/]
 
-  # Use relative URLs
-  # activate :relative_assets
-  # set :relative_links, true
+  activate :minify_html do |html|
+    html.remove_multi_spaces        = true
+    html.remove_comments            = true
+    html.preserve_line_breaks       = false
+    html.remove_intertag_spaces     = true
 
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+    html.remove_quotes              = false
+    html.simple_doctype             = false
+    html.remove_script_attributes   = false
+    html.remove_style_attributes    = false
+    html.remove_link_attributes     = false
+    html.remove_form_attributes     = false
+    html.remove_input_attributes    = false
+    html.remove_javascript_protocol = false
+    html.remove_http_protocol       = false
+    html.remove_https_protocol      = false
+    html.simple_boolean_attributes  = false
+  end
 end

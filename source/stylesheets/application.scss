@@ -385,12 +385,36 @@
   button {
     width: 40%;
     float: right;
-    font-weight: 700;
   }
 }
 
 #footer {
   margin: 50px 0;
+}
+
+
+.itunes-review {
+  padding: 50px 0;
+  border-top: 1px solid $light-grey;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: $black;
+  }
+
+  .button {
+    margin-top: 20px;
+    display: inline-block;
+  }
+}
+
+.itunes-stars {
+  margin: 0 auto 20px auto;
+  width: 157px;
+  height: 29px;
+  @include background-image-retina('/images/itunes-stars', 'png', 157px, 29px);
 }
 
 .footer-content {
